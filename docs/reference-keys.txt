@@ -1,5 +1,3 @@
-fig:nice-fig
-tab:nice-tab
 fig:victimasvioletal
 fig:victimasdelhimitiv
 fig:victimasmilocuactidonagraf
