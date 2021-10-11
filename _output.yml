@@ -20,4 +20,8 @@ bookdown::pdf_book:
   keep_tex: yes
 bookdown::epub_book: default
 bookdown::bs4_book: default
-
+bookdown::word_document2:
+    fig_caption: yes
+    md_extensions: +footnotes
+    reference_docx: custom_reference.docx
+    toc: yes
