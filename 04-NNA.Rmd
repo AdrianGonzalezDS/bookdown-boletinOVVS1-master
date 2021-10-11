@@ -1,0 +1,44 @@
+# Niñas, niños y adolescentes
+
+## Demografía y tipo de delito
+```{r victinnaedadsexopiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
+source("victimasodelNNA_edadsexo_piramide.R", echo = F,local = knitr::knit_global())
+```
+
+```{r victinnasexotipodelpiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
+source("victimasdelNNA_sexotipodel_piramide.R", echo = F,local = knitr::knit_global())
+```
+
+
+(ref:victinnaedadsexo) Demografía y tipo de delito en víctimas niñas, niños y adolescentes.
+
+```{r victinnaedadsexopirgraf, echo=FALSE, fig.show="hold", out.width="50%", warning=FALSE,cache=F,fig.cap = '(ref:victinnaedadsexo)'}
+par(mar = c(4, 4, 0.1, 0.1))
+plot(victimasodelNNA_piramide, pch = 19, type= "b")
+plot(victimasexodelNNA_graf)
+```
+
+
+## Victimario
+
+
+```{r victinnasexovictimarioconpiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
+source("victimasdelNNA_sexovictimariocon_piramide.R", echo = F,local = knitr::knit_global())
+```
+
+
+```{r victinnasexovictimariorelpiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
+source("victimasdelNNA_sexovictimariorel_piramide.R", echo = F,local = knitr::knit_global())
+```
+
+
+
+(ref:victinnasexovictimario) Relación y tipo de victimario en niñas, niños y adolescentes víctima de delito.
+
+```{r victinnasexovictimarioconpirgraf, echo=FALSE, fig.show="hold", out.width="50%", warning=FALSE,cache=F,fig.cap = '(ref:victinnasexovictimario)'}
+par(mar = c(4, 4, 0.1, 0.1))
+plot(victimasexodelvictimariorelNNA_graf)
+plot(victimasexodelvictimarioconNNA_graf, pch = 19, type= "b")
+
+```
+

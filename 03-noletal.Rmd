@@ -1,0 +1,63 @@
+# Violencia no letal
+
+## Otros delitos distintos a homicido intencional (HI)
+
+```{r victimasodelpiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
+source("victimasodel_edadsexo_piramide.R", echo = F,local = knitr::knit_global())
+```
+
+
+
+```{r sucesosotrosdelbarras, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
+source("sucesosotrosdel_barras.R", echo = F,local = knitr::knit_global())
+```
+
+
+```{r victimasexodelactivpir, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
+source("victimasexodel_actividad_piramide.R", echo = F,local = knitr::knit_global())
+```
+
+
+(ref:victimasodeledadsexo) Número víctimas y sucesos de otros delitos distintos a homicidio intencional.
+
+```{r victimasodeledadsexopirgraf, echo=FALSE, fig.show="hold", out.width="50%", warning=FALSE,cache=F,fig.cap = '(ref:victimasodeledadsexo)'}
+par(mar = c(4, 4, 0.1, 0.1))
+plot(victimasodel_piramide, pch = 19, type= "b")
+plot(sucesosotrosdel_barras)
+
+```
+
+```{r victimasexodelpiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
+source("victimasodel_sexo_piramide.R", echo = F,local = knitr::knit_global())
+```
+
+(ref:victimasodelsexoagr) Tipo de delito y acividad de las víctimas de otros delitos distintos a homicidio intencional.
+
+```{r victimasodelsexopirgraf, echo=FALSE, fig.show="hold", out.width="50%", warning=FALSE,cache=F,fig.cap = '(ref:victimasodelsexoagr)'}
+par(mar = c(4, 4, 0.1, 0.1))
+plot(victimasexotrosdel_graf, pch = 19, type= "b")
+plot(victimasexodelactiv_graf)
+```
+
+## Víctimas de agresión
+
+```{r victiagresexopiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
+source("victimasagresiondel_sexo_piramide.R", echo = F,local = knitr::knit_global())
+```
+
+
+```{r victiagresexodondepiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
+source("victimasagresiondel_sexodonde_piramide.R", echo = F,local = knitr::knit_global())
+```
+
+
+(ref:victiagrsexo) Motivación y lugar donde ocurrio el delito para víctimas de agresión.
+
+```{r victiagrsexdondepirgraf, echo=FALSE, fig.show="hold", out.width="50%", warning=FALSE,cache=F,fig.cap = '(ref:victiagrsexo)'}
+par(mar = c(4, 4, 0.1, 0.1))
+plot(grafico, pch = 19, type= "b")
+plot(victimasagresiondonde_grafico)
+```
+
+
+

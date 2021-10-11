@@ -1,0 +1,16 @@
+book_filename: "bookdown-boletinOVVS1"
+#new_session: yes
+language:
+  label:
+    fig: 'Figura '
+    tab: 'Tabla '
+
+
+
+
+  ui:
+    chapter_name: ""
+
+    On this page: 'En esta página'
+output_dir: docs
+delete_merged_file: true
