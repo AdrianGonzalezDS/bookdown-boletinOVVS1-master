@@ -65,8 +65,8 @@ victimasmil_ocupacion_donagraf <- ggplot(data = ocupacion_porcent,
   #scale_fill_brewer(palette = "Dark")+
   xlim(1,2.5) + guides(fill=guide_legend(title=''))+
   labs(title="Víctimas de muertes por intervención policial",
-       subtitle = "discriminadas por el tipo de pcupación de la víctima",
-       caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasmilocupacion)} ({sum(is.na(victimasmilocupacion$ocupacion_victima_1)| victimasmilocupacion$ocupacion_victima_1 == 'NA')} casos perdidos por informaci?n faltante) en {prensa_victimasmilocupacion_sel} medios de prensa consultados \nPer?odo de recolecci?n de informaci?n: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"))+
+       subtitle = "discriminadas por el tipo de ocupación de la víctima",
+       caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasmilocupacion)} ({sum(is.na(victimasmilocupacion$ocupacion_victima_1)| victimasmilocupacion$ocupacion_victima_1 == 'NA')} casos perdidos por información faltante) en {prensa_victimasmilocupacion_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"))+
   geom_text_repel(aes(label = porcentaje, x = 1.95),
                   position = position_stack(vjust = 0.8),
                   color = c("white", "white", "white", "white", "white", "white"))

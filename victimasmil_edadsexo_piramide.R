@@ -73,8 +73,8 @@ a <- ggplot(victimasmilsexoedad_sel,
                                    color='black',
                                    angle=0,
                                    vjust = 0.5))+
-  labs(title="Número de víctimas por delitos distintos a homicidio intencional",
-       subtitle = "discriminados por sexo y actividad",
+  labs(title="Número de víctimas por intervención policial",
+       subtitle = "discriminados por sexo y edad",
        caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasmilsexoedad)} ({sum(is.na(victimasmilsexoedad$sexo_victima_1) | is.na(victimasmilsexoedad$edad__victima_1) |victimasmilsexoedad$edad__victima_1 == 99 | victimasmilsexoedad$sexo_victima_1 == 'No informa')} casos perdidos por edad y sexo faltante) en {prensa_victimasmilsexoedad_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"))+
   scale_fill_manual(values = c("red3","dodgerblue4"))+
   xlab("Edad (años)") +
