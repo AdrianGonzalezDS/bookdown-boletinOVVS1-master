@@ -84,7 +84,7 @@ victimasdelhimotiv_graf <- apyramid::age_pyramid(data = victimasdelhimotiv_sel,
                                                   split_by = "sexo", show_midpoint=F)+# labels, titles, caption
   labs(title="Número de víctimas por homicidio intencional",
        subtitle = "discriminados por sexo y motivación del delito",
-       caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasagresiondel)} ({sum(is.na(victimasagresiondel$sexo_victima_2) | is.na(victimasagresiondel$motivacion) |victimasagresiondel$motivacion == 'NA'|victimasagresiondel$motivacion == 'No informa' | victimasagresiondel$sexo_victima_2 == 'No informa')} casos perdidos por información faltante) en {prensa_victimasagresiondel_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"),
+       caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasagresiondel)} ({sum(is.na(victimasagresiondel$sexo_victima_2) | is.na(victimasagresiondel$motivacion) |victimasagresiondel$motivacion == 'NA'|victimasagresiondel$motivacion == 'No informa' | victimasagresiondel$sexo_victima_2 == 'No informa')} casos perdidos por información faltante) en {prensa_victimasdelhimotiv_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"),
        x = "Motivación",
        y = "Número de víctimas",
        fill = "")+

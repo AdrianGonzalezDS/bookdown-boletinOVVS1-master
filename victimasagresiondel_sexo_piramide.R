@@ -26,7 +26,7 @@ sexo_victimasagresiondel_sel
 unique(victimasagresiondel[c("sexo_victima_2")])
 
 victimasagresiondel_sel <- victimasdelito %>%
-  select(sexo_victima_2, tipo_delito,motivacion) %>%
+  select(sexo_victima_2, prensa, tipo_delito,motivacion) %>%
   filter(tipo_delito == "Agresión"&
            !sexo_victima_2 %in% c("No informa",NA, "NA")&
            !motivacion %in% c(NA, "NA"))

@@ -26,7 +26,7 @@ sexo_victimasagresiondonde_sel
 unique(victimasagresiondonde[c("sexo_victima_2")])
 
 victimasagresiondonde_sel <- victimasdelito %>%
-  select(sexo_victima_2, tipo_delito,donde_delito) %>%
+  select(sexo_victima_2, prensa, tipo_delito,donde_delito) %>%
   filter(tipo_delito == "Agresión"&
            !sexo_victima_2 %in% c("No informa",NA, "NA")&
            !donde_delito %in% c(NA, "NA"))
@@ -74,7 +74,7 @@ victimasagresiondonde_grafico <- apyramid::age_pyramid(data = victimasagresiondo
                                  pyramid = T)+
   # labels, titles, caption
   labs(title="Número de víctimas por agresión",
-       subtitle = "discriminados por sexo y el lugar donde ocurrió el delito",
+       subtitle = "discriminados por sexo y lugar de ocurrencia",
        caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasagresiondonde)} ({sum(is.na(victimasagresiondonde$sexo_victima_2) | is.na(victimasagresiondonde$donde_delito) |victimasagresiondonde$donde_delito == 'NA'|victimasagresiondonde$donde_delito == 'No informa' | victimasagresiondonde$sexo_victima_2 == 'No informa')} casos perdidos por información faltante) \nen {prensa_victimasagresiondonde_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"),
        x = "Lugar de ocurrencia",
        y = "Número de víctimas",
