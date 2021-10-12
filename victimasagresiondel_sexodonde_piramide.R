@@ -14,9 +14,8 @@ enddate <- as.Date(c("2021-06-30"))
 
 #Prepare datos
 victimasagresiondonde <- victimasdelito %>%
-  select(infodelito2, prensa, sexo_victima_2, tipo_delito,donde_delito) %>%
-  filter(infodelito2 == "Si"&
-           tipo_delito == "Agresión" )
+  select(prensa, sexo_victima_2, tipo_delito,donde_delito) %>%
+  filter(tipo_delito == "Agresión" )
 
 victimasagresiondonde #requerido para calcular casos perdidos
 

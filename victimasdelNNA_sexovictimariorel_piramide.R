@@ -14,18 +14,15 @@ enddate <- as.Date(c("2021-06-30"))
 
 #Prepare datos
 victimasexodelvictimariorelNNA <- victimasdelito %>%
-  select(infodelito2, edad__victima_2, prensa, sexo_victima_2, tipo_delito, relacion_victimario) %>%
-  filter(infodelito2 == "Si"&
-           !edad__victima_2 %in% c(18:100))
+  select(informacion_sociodem_2, edad__victima_2, prensa, sexo_victima_2, tipo_delito, relacion_victimario) %>%
+  filter(!edad__victima_2 %in% c(18:100))
 
 victimasexodelvictimariorelNNA #requerido para calcular casos perdidos
 
 
 victimasexodelvictimariorelNNA_sel <- victimasdelito %>%
-  select(infodelito2, edad__victima_2, prensa, sexo_victima_2, tipo_delito, relacion_victimario) %>%
-  filter(infodelito2 == "Si"&
-           !edad__victima_2 %in% c(18:100)&
-           !infodelito2 %in% c(NA, "NA")&
+  select(informacion_sociodem_2, edad__victima_2, prensa, sexo_victima_2, tipo_delito, relacion_victimario) %>%
+  filter(!edad__victima_2 %in% c(18:100)&
            !sexo_victima_2 %in% c("No informa",NA, "NA")&
            !relacion_victimario %in% c("No informa",NA, "NA"))
 

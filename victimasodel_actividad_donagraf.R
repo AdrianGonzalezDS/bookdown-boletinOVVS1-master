@@ -17,15 +17,13 @@ enddate <- as.Date(c("2021-06-30"))
 
 #Prepare datos
 victimasodelactividad <- victimasdelito %>%
-  select(infodelito2, prensa, tipo_delito, victima_era_2) %>%
-  filter(infodelito2 == "Si" &
-           !tipo_delito %in% c("Homicidio intencional"))
+  select(informacion_sociodem_2, prensa, tipo_delito, victima_era_2) %>%
+  filter(!tipo_delito %in% c("Homicidio intencional"))
 victimasodelactividad
 
 victimasodelactividadi_sel <- victimasdelito %>%
-  select(infodelito2, prensa, tipo_delito, victima_era_2) %>%
-  filter(infodelito2 == "Si" &
-           !tipo_delito %in% c("Homicidio intencional")&
+  select(informacion_sociodem_2, prensa, tipo_delito, victima_era_2) %>%
+  filter(!tipo_delito %in% c("Homicidio intencional")&
            !victima_era_2 %in% c(NA, "NA"))
 
 victimasodelactividadi_sel
