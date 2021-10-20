@@ -28,7 +28,7 @@ plot(victimasdelhi_piramide)
 plot(victimasdelhimotiv_graf)
 ```
 
-En este punto, es donde resultan consolidados los vínculos entre la Penitenciaria General de Venezuela (PGV) y los sindicatos de la construcción, en particular aquellos vinculados a las obras del ferrocarril del centro [@Moreno-Losada2015; @Mayorca2016; @Antillano2020]. En otras palabras, la PGV aportó los elementos clave de la estructura criminal a través de su grado de cercanía con los sindicatos de la construcción  y, el patrón seguido por el trazado de las vías ferroviarias, permitió propagarlo en los municipios afectados por este, dando paso a la formación de grupos armados que extorsionaban a las empresas constructoras y prácticamente a todos los eslabones del circuito agroalimentario guariqueño.
+Esto merece atención por cuanto al ver en el grafico \@ref(fig:victimasvioletal), las motivaciones para estos delitos discriminados por sexo, nos muestra que las causas reportadas para el caso de las mujeres, son las que tienen que ver con el género, y otras motivaciones, entre las cuales se menciona los conflictos intrafamiliares; mientras que para los hombres predominan como motivaciones los ajustes de cuentas, el provecho ilícito, la venganza.
 
 ## Muertes por intervención policial (MIP)
 
