@@ -32,7 +32,7 @@ Esto merece atención por cuanto al ver en el grafico \@ref(fig:victimasvioletal
 
 ## Muertes por intervención policial (MIP)
 
-A diferencia de la violencia letal generada por las dinámicas de homicidios intencionales, que experimentó un gran incremento en comparación con 2020, la letalidad policial no ha mostrado grandes variaciones en 2021 con respecto a 2020 como lo ilustra la Fig. \@ref(fig:victimasdelhimitiv). Allí se puede apreciar, que las muertes violentas producto de HI casi se duplican mientras que la letalidad policial, prácticamente, permanece invariable hasta el momento.
+Las muertes por intervención policial informadas durante este semestre (gráfico \@ref(fig:victimasdelhimitiv)), en los reportes de prensa consultados, alcanzan más de 60 víctimas masculinas en edades comprendidas entre 20 y 30 años, aunque llama la atención que también se reportaron víctimas de menos de un año y de 70 años, que, aunque en mucha menor proporción, intriga la muerte de varones de esas edades en manos de la policía. La muerte de mujeres en manos de la policía es mucho menor que los hombres, siendo las víctimas mayores de 20 años las más afectadas. . Allí se puede apreciar, que las muertes violentas producto de HI casi se duplican mientras que la letalidad policial, prácticamente, permanece invariable hasta el momento.
 
 ```{r sucesospolbarras, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
 source("sucesospolBarras.R", echo = F,local = knitr::knit_global())
@@ -46,7 +46,8 @@ plot(a, pch = 19)
 plot(sucesospol_barras)
 ```
 
-Si bien el número de muertes violentas provocadas por los cuerpos de seguridad puede cambiar de manera impredecible, el equilibrio logrado hasta el momento parece concentrarse en el núcleo o corredores urbanos donde predomina el micro tráfico de drogas o menudeo, en los que prevalecen actores poco estructurados, independientes y que manejan pequeñas porciones del mercado. Por extraño que parezca, el “policiamiento”  de los mercados de la droga tiende a centrarse en estos grupos de pequeños vendedores “freelance” [@Antillano2020]. Por lo general, los organismos policiales suelen evitar a los grupos mejor estructurados debido a su gran capacidad de movilización interna frente a las amenazas, a su potencial para absorber el impacto de las arremetidas oficiales y, por último, pero quizá lo más importante, el volumen de ingresos que manejan les permite negociar la participación en la renta y coludir  con actores estatales para el fomento de actividades ilícitas.
+El desglose de los organismos policiales vinculados a los homicidios reportados en prensa, indica que en por lo menos 160 sucesos conocidos, estuvo involucrada la policía estadal en 35%, seguidos por la PNB y el CICPC en casi 100 casos cada uno, para un 20% respectivamente, siendo los cuerpos menos involucrados la policía municipal y las FANB.
+
 
 ```{r victimasmilactivdona, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
 source("victimasmil_actividad_donagraf.R", echo = F,local = knitr::knit_global())
@@ -56,12 +57,3 @@ source("victimasmil_actividad_donagraf.R", echo = F,local = knitr::knit_global()
 source("victimasmil_ocupacion_donagraf.R", echo = F,local = knitr::knit_global())
 ```
 
-(ref:victimasmilactivocupa) Actividad y ocupación de víctimas por intervención policial.
-
-```{r victimasmilocuactidonagraf, echo=FALSE, fig.show="hold", out.width="50%", warning=FALSE,cache=F,fig.cap = '(ref:victimasmilactivocupa)'}
-par(mar = c(4, 4, 0.1, 0.1))
-plot(victimasmil_actividad_donagraf, pch = 19)
-plot(victimasmil_ocupacion_donagraf)
-```
-
-Una de las posibles consecuencias de este fenómeno, es la consolidación de organizaciones ilícitas relativamente poderosas y políticamente bien conectadas. Los trabajo de @Idler2015; @Colmenares2016 y @Cancilleria_Colombiana2019 son precursores documentando este tipo de cooperación y ofrecen indicios de cómo se pudieran estar utilizado los municipios guariqueños, y buena parte de la Orinoquía colombo-venezolana, en la organización de vuelos ilícitos que conectan con el Caribe dentro de posibles esquemas de colusión con las autoridades. Sin embargo, de llegar a concretarse estas actuaciones, podrían conducir -a la postre- a modelos muy irregulares de asociación entre organismos oficiales y delincuentes con relaciones muy inestables y, por lo tanto, con tendencia a desenlaces violentos y un gran potencial para alimentar las tasas de muertes en averiguación y resistencia a la autoridad [@Idler2020]. Aquí la violencia gubernamental y paraestatal puede resultar sustancial debido a la competencia por mercados ilícitos, con el agravante, de que estos corredores espaciales se encuentran, en gran medida, fuera de la vista de la sociedad civil y en medio de desiertos informativos [@IPYS2020], razón por la que muchas veces pasa inadvertida. 

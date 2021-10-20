@@ -1,6 +1,5 @@
 fig:victimasvioletal
 fig:victimasdelhimitiv
-fig:victimasmilocuactidonagraf
 fig:victimasodeledadsexopirgraf
 fig:victimasodelsexopirgraf
 fig:victiagrsexdondepirgraf

@@ -2,6 +2,8 @@
 
 ## Otros delitos distintos a homicido intencional (HI)
 
+En casos de delitos diferentes al homicidio, entre los que se encuentran: tentativa de homicidio, secuestro, desaparición forzada, violación sexual, otras agresiones sexuales, robo, agresiones, extorsión, amenaza de muerte y amenaza de agresión, son las mujeres las más afectadas, sorprendentemente en los grupos etarios entre 6 y 15 años, además del grupo de 46 a 50 años. Entre los hombres, es el grupo de hombres entre 11 y 40 años quienes son víctimas de estos delitos.
+
 ```{r victimasodelpiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
 source("victimasodel_edadsexo_piramide.R", echo = F,local = knitr::knit_global())
 ```
@@ -27,9 +29,13 @@ plot(sucesosotrosdel_barras)
 
 ```
 
+De los delitos diferentes al homicidio intencional, en los más de 500 sucesos informados por la prensa durante el semestre, son las agresiones graves y leves las más frecuentes (34%), seguidas del robo (27%). Son los delitos menos frecuentes las amenazas de agresión y las desapariciones forzadas.
+
 ```{r victimasexodelpiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
 source("victimasodel_sexo_piramide.R", echo = F,local = knitr::knit_global())
 ```
+
+Esos delitos diferentes de los homicidios discriminados por sexo, permiten apreciar de acuerdo con lo reportado por la prensa durante este semestre, que tal como lo mencionamos en la gráfica XX son las agresiones los delitos más cometidos y en similar proporción en personas del sexo masculino y femenino. Pero además, los hombres son más víctimas de otros delitos como robo y tentativa de homicidio, mientras que las mujeres lo son de violación sexual, robo y otras agresiones sexuales.
 
 (ref:victimasodelsexoagr) Tipo de delito y acividad de las víctimas de otros delitos distintos a homicidio intencional.
 
@@ -38,6 +44,8 @@ par(mar = c(4, 4, 0.1, 0.1))
 plot(victimasexotrosdel_graf, pch = 19, type= "b")
 plot(victimasexodelactiv_graf)
 ```
+
+De las víctimas de delitos distintos al homicidio, en el caso de los hombres son fundamentalmente trabajadores, y en menor proporción estudiantes. Son las mujeres estudiantes las más afectadas por este tipo de delitos y menor número de trabajadoras.
 
 ## Víctimas de agresión
 
