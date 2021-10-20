@@ -22,8 +22,9 @@ plot(victimasexodelNNA_graf)
 ```
 
 
-## Victimario
+## Los victimarios
 
+Los victimarios de esos niños, niñas y adolescentes son fundamentalmente familiares conocidos por las víctimas, siendo también victimarios la delincuencia común aunque presentes en más casos cuando se trata del sexo masculino.
 
 ```{r victinnasexovictimarioconpiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
 source("victimasdelNNA_sexovictimariocon_piramide.R", echo = F,local = knitr::knit_global())
@@ -45,3 +46,4 @@ plot(victimasexodelvictimarioconNNA_graf, pch = 19, type= "b")
 
 ```
 
+Si profundizamos en las características relacionales de las víctimas con sus mayores victimarios que son personas conocidas, nos encontramos con que los datos reportados y visualizados en la gráfica \@ref(fig:victinnasexovictimarioconpirgraf), indican que en ambos sexos son los parientes consanguíneos quienes cometen los delitos contra los niños, niñas y adolescentes. La diversidad de victimarios está más presente en el caso del sexo femenino, quienes además son víctimas de otro miembro del hogar, otro agresor conocido, vecinos y pareja o expareja. Los del sexo masculino además fueron victimizados por otro agresor conocido, un vecino, y pocos casos por otro miembro del hogar o amigo.
