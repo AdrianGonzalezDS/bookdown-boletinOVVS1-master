@@ -25,3 +25,5 @@ bookdown::word_document2:
     md_extensions: +footnotes
     reference_docx: custom_reference.docx
     toc: yes
+    fig_heigth: 1
+    fig_width: 3
