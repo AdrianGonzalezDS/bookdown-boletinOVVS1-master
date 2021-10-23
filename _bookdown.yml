@@ -11,6 +11,6 @@ language:
   ui:
     chapter_name: ""
 
-    On this page: 'En esta página'
+
 output_dir: docs
 delete_merged_file: true
