@@ -23,7 +23,10 @@ bookdown::bs4_book: default
 bookdown::word_document2:
     fig_caption: yes
     md_extensions: +footnotes
-    reference_docx: custom_reference.docx
+    reference_docx: default
     toc: yes
-    fig_heigth: 1
+    fig_heigth: 3
     fig_width: 3
+    cover-image: "images/cover.png"
+
+

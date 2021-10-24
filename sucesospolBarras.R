@@ -101,6 +101,7 @@ sucesospol_barras <- ggplot(porcent_grup_sucesospol,
 sucesospol_barras
 
 
+#ggsave("images/sucesospol_barras.png")
 
 
 # sucesospol_barras <- ggplot(porcent_grup_sucesospol, aes(x=reorder(freq, organanismo_seguridad_1, function(x) length(x))))+

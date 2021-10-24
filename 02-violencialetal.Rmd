@@ -40,9 +40,9 @@ source("sucesospolBarras.R", echo = F,local = knitr::knit_global())
 
 (ref:victimasmiledadsexo) Número víctimas y sucesos por intervención policial.
 
-```{r victimasdelhimitiv, echo=FALSE, fig.show="hold", out.width="50%", warning=FALSE,cache=F,fig.cap = '(ref:victimasmiledadsexo)'}
+```{r victimasdelhimitiv, echo=FALSE, fig.show="hold" , out.width="50%", warning=FALSE,cache=F,fig.cap = '(ref:victimasmiledadsexo)'}
 par(mar = c(4, 4, 0.1, 0.1))
-plot(a, pch = 19)
+plot(a)
 plot(sucesospol_barras)
 ```
 
