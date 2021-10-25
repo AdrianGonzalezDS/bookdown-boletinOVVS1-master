@@ -71,7 +71,7 @@ knitr::include_graphics(c("images/victimasexodelactiv_graf.png"))
 
 ## Víctimas de agresión
 
-En los casos conocidos de víctimas por agresión, es notable que las mujeres son victimizadas principalmente por motivaciones basadas en género y otras causas; mientras que los hombres son víctimas debido a riñas, provecho ilícito y otras causas no especificadas. En ambos sexos, motivaciones como ajuste de cuentas, prejuicios o venganzas son numéricamente muy inferiores.
+En los casos conocidos de víctimas por agresión, es notable que las mujeres son victimizadas principalmente por motivaciones basadas en género y otras causas; mientras que los hombres son víctimas debido a riñas, provecho ilícito y otras causas no especificadas. En ambos sexos, motivaciones como ajuste de cuentas, prejuicios o venganzas son numéricamente muy inferiores (gráfico \@ref(fig:victimasagresiondelmotivpir)).
 
 ```{r victiagresexopiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
 source("victimasagresiondel_sexo_piramide.R", echo = F,local = knitr::knit_global())
@@ -82,14 +82,25 @@ source("victimasagresiondel_sexo_piramide.R", echo = F,local = knitr::knit_globa
 source("victimasagresiondel_sexodonde_piramide.R", echo = F,local = knitr::knit_global())
 ```
 
+(ref:victimasagresiondelsexomotiv) Número víctimas de agresión discriminados según sexo y la motivación del delito.
 
-(ref:victiagrsexo) Motivación y lugar donde ocurrio el delito para víctimas de agresión.
-
-```{r victiagrsexdondepirgraf, echo=FALSE, fig.show="hold", out.width="50%", warning=FALSE,cache=F,fig.cap = '(ref:victiagrsexo)'}
+```{r victimasagresiondelmotivpir, echo=FALSE, out.width="90%",warning=FALSE,cache=F,fig.cap = '(ref:victimasagresiondelsexomotiv)'}
 par(mar = c(4, 4, 0.1, 0.1))
-plot(grafico, pch = 19, type= "b")
-plot(victimasagresiondonde_grafico)
+knitr::include_graphics(c("images/victimasagresiondelmotiv_pir.png"))
+# par(mar = c(4, 4, 0.1, 0.1))
+# plot(a)
+# plot(sucesospol_barras)
 ```
 
-De acuerdo con los roles socialmente desempeñados por ambos sexos, la gráfica \@ref(fig:victiagrsexdondepirgraf) muestra como las mujeres son víctimas de delitos diferentes de homicidio fundamentalmente en el hogar, mientras que los hombres están más expuestos a delitos en espacios abiertos o en la calle. Aunque el hogar y las prisiones o instituciones penales son lugares donde también los hombres son victimizados.
+De acuerdo con los roles socialmente desempeñados por ambos sexos, la gráfica \@ref(fig:victimasagresiondeldondepir) muestra como las mujeres son víctimas de delitos diferentes de homicidio fundamentalmente en el hogar, mientras que los hombres están más expuestos a delitos en espacios abiertos o en la calle. Aunque el hogar y las prisiones o instituciones penales son lugares donde también los hombres son victimizados.
+
+(ref:victimasagresiondelsexodonde) Número víctimas de agresión discriminados según sexo y por el lugar donde ocurrió el delito.
+
+```{r victimasagresiondeldondepir, echo=FALSE, out.width="90%",warning=FALSE,cache=F,fig.cap = '(ref:victimasagresiondelsexodonde)'}
+par(mar = c(4, 4, 0.1, 0.1))
+knitr::include_graphics(c("images/victimasagresiondonde_grafico.png"))
+# par(mar = c(4, 4, 0.1, 0.1))
+# plot(a)
+# plot(sucesospol_barras)
+```
 

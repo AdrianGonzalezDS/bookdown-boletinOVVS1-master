@@ -72,9 +72,9 @@ victimasagresiondonde_grafico <- apyramid::age_pyramid(data = victimasagresiondo
                                  na.rm = T, show_midpoint = F,
                                  pyramid = T)+
   # labels, titles, caption
-  labs(title="Número de víctimas por agresión",
-       subtitle = "discriminados por sexo y lugar de ocurrencia",
-       caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasagresiondonde)} ({sum(is.na(victimasagresiondonde$sexo_victima_2) | is.na(victimasagresiondonde$donde_delito) |victimasagresiondonde$donde_delito == 'NA'|victimasagresiondonde$donde_delito == 'No informa' | victimasagresiondonde$sexo_victima_2 == 'No informa')} casos perdidos por información faltante) \nen {prensa_victimasagresiondonde_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"),
+  labs(#title="Número de víctimas por agresión",
+       #subtitle = "discriminados por sexo y lugar de ocurrencia",
+       caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasagresiondonde)} ({sum(is.na(victimasagresiondonde$sexo_victima_2) | is.na(victimasagresiondonde$donde_delito) |victimasagresiondonde$donde_delito == 'NA'|victimasagresiondonde$donde_delito == 'No informa' | victimasagresiondonde$sexo_victima_2 == 'No informa')} casos perdidos por información faltante) en {prensa_victimasagresiondonde_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"),
        x = "Lugar de ocurrencia",
        y = "Número de víctimas",
        fill = "")+
@@ -91,6 +91,9 @@ victimasagresiondonde_grafico <- apyramid::age_pyramid(data = victimasagresiondo
         plot.caption = element_text(hjust=0, size=8, face = "italic"))
 
 victimasagresiondonde_grafico
+
+ggsave("images/victimasagresiondonde_grafico.png",width=8,height=5)
+
 
 # unique(victimasagresiondonde_sel[c("sexo_victima_2")])
 

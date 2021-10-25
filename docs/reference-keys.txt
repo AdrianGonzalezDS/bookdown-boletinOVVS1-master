@@ -6,7 +6,8 @@ fig:victimasodelsexoedadpir
 fig:sucesosodeltipodel
 fig:victimasodelsexotipodelpir
 fig:victimasodelsexoactivpir
-fig:victiagrsexdondepirgraf
+fig:victimasagresiondelmotivpir
+fig:victimasagresiondeldondepir
 fig:victinnaedadsexopirgraf
 fig:victinnasexovictimarioconpirgraf
 intro

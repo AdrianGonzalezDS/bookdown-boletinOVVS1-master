@@ -67,15 +67,15 @@ victimasagresiondel_sel$motivacion  <- str_replace_all(victimasagresiondel_sel$m
 victimasagresiondel_sel$motivacion = as.factor(victimasagresiondel_sel$motivacion)
 
 
-grafico <- apyramid::age_pyramid(data = victimasagresiondel_sel,
+victimasagresiondelmotiv_pir <- apyramid::age_pyramid(data = victimasagresiondel_sel,
                                  age_group = "motivacion",
                                  split_by = "sexo_victima_2",
                                  na.rm = T, show_midpoint = F,
                                  pyramid = T)+
   # labels, titles, caption
-    labs(title="Número de víctimas por agresión",
-         subtitle = "discriminados por sexo y motivación del delito",
-         caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasagresiondel)} ({sum(is.na(victimasagresiondel$sexo_victima_2) | is.na(victimasagresiondel$motivacion) |victimasagresiondel$motivacion == 'NA'|victimasagresiondel$motivacion == 'No informa' | victimasagresiondel$sexo_victima_2 == 'No informa')} casos perdidos por información faltante) \nen {prensa_victimasagresiondel_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"),
+    labs(#title="Número de víctimas por agresión",
+         #subtitle = "discriminados por sexo y motivación del delito",
+         caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasagresiondel)} ({sum(is.na(victimasagresiondel$sexo_victima_2) | is.na(victimasagresiondel$motivacion) |victimasagresiondel$motivacion == 'NA'|victimasagresiondel$motivacion == 'No informa' | victimasagresiondel$sexo_victima_2 == 'No informa')} casos perdidos por información faltante) en {prensa_victimasagresiondel_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"),
          x = "Motivación",
          y = "Número de víctimas",
          fill = "")+
@@ -91,7 +91,10 @@ grafico <- apyramid::age_pyramid(data = victimasagresiondel_sel,
     plot.title = element_text(hjust = 0),
     plot.caption = element_text(hjust=0, size=8, face = "italic"))
 
-grafico
+victimasagresiondelmotiv_pir
+
+ggsave("images/victimasagresiondelmotiv_pir.png",width=8,height=5)
+
 
 # unique(victimasagresiondel_sel[c("sexo_victima_2")])
 
