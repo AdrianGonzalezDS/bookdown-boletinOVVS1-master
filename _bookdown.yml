@@ -2,9 +2,9 @@ book_filename: "bookdown-boletinOVVS1"
 #new_session: yes
 language:
   label:
-    fig: 'Figura '
+    fig: 'Gráfico '
     tab: 'Tabla '
-
+    Table of Contents: 'Tabla de contenido'
 
 
 

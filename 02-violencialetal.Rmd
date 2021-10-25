@@ -2,7 +2,7 @@
 
 ## Homicidio intencional
 
-Entendiendo el homicidio intencional como la “muerte ilícita causada a una persona con la intención de causarle la muerte u ocasionarle lesiones graves” [@UNODC2015,19], no cabe duda de que este delito sigue siendo de los más graves que se cometen y son reportados por la prensa. Así puede observarse en la gráfica \@ref(fig:victimasvioletal) que este delito discriminado por edad y sexo nos muestra lo que ha sido una tendencia en el país y en Latinoamérica, y son las muertes de hombres jóvenes menores de 30 años, pero también puede notarse que durante el periodo en estudio fueron recogidos mayoritariamente por la prensa el homicidio al sexo femenino en edades entre 11 y 25 años, fundamentalmente el grupo entre adolescentes de 11 a 15 años. Y aunque con las menores proporciones también sucedió con octogenarias y menores de 1 año de edad. 
+Entendiendo el homicidio intencional como la “muerte ilícita causada a una persona con la intención de causarle la muerte u ocasionarle lesiones graves” [@UNODC2015,19], no cabe duda de que este delito sigue siendo de los más graves que se cometen y son reportados por la prensa. Así puede observarse en la gráfica \@ref(fig:victimasdelhisexoedadpir) que este delito discriminado por edad y sexo nos muestra lo que ha sido una tendencia en el país y en Latinoamérica, y son las muertes de hombres jóvenes menores de 30 años, pero también puede notarse que durante el periodo en estudio fueron recogidos mayoritariamente por la prensa el homicidio al sexo femenino en edades entre 11 y 25 años, fundamentalmente el grupo entre adolescentes de 11 a 15 años. Y aunque con las menores proporciones también sucedió con octogenarias y menores de 1 año de edad. 
 
 ```{r victimasmilpiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
 source("victimasmil_edadsexo_piramide.R", echo = F,local = knitr::knit_global())
@@ -18,36 +18,58 @@ source("victimasdelhi_edadsexo_piramide.R", echo = F,local = knitr::knit_global(
 source("victimasdelhi_motivacion_piramide.R", echo = F,local = knitr::knit_global())
 ```
 
+(ref:victimasdeledadsexo) Número víctimas por homicidio intencional discriminadas según edad y sexo.
 
-(ref:victimasdeledadsexo) Número víctimas por homicidio intencional.
-
-
-```{r victimasvioletal, echo=FALSE, fig.show="hold", out.width="50%", warning=FALSE,cache=F,fig.cap = '(ref:victimasdeledadsexo)'}
+```{r victimasdelhisexoedadpir, echo=FALSE, out.width="90%",warning=FALSE,cache=F,fig.cap = '(ref:victimasdeledadsexo)'}
 par(mar = c(4, 4, 0.1, 0.1))
-plot(victimasdelhi_piramide)
-plot(victimasdelhimotiv_graf)
+knitr::include_graphics(c("images/victimasdelhi_piramide.png"))
+# par(mar = c(4, 4, 0.1, 0.1))
+# plot(a)
+# plot(sucesospol_barras)
 ```
 
-Esto merece atención por cuanto al ver en el grafico \@ref(fig:victimasvioletal), las motivaciones para estos delitos discriminados por sexo, nos muestra que las causas reportadas para el caso de las mujeres, son las que tienen que ver con el género, y otras motivaciones, entre las cuales se menciona los conflictos intrafamiliares; mientras que para los hombres predominan como motivaciones los ajustes de cuentas, el provecho ilícito, la venganza.
+Esto merece atención por cuanto al ver en el grafico \@ref(fig:victimasdelhimotiv), las motivaciones para estos delitos discriminados por sexo, nos muestra que las causas reportadas para el caso de las mujeres, son las que tienen que ver con el género, y otras motivaciones, entre las cuales se menciona los conflictos intrafamiliares; mientras que para los hombres predominan como motivaciones los ajustes de cuentas, el provecho ilícito, la venganza.
+
+(ref:victimasdelmotiv) Número víctimas por homicidio intencional discriminadas según el sexo y la motivación del delito.
+
+```{r victimasdelhimotiv, echo=FALSE, out.width="90%",warning=FALSE,cache=F,fig.cap = '(ref:victimasdelmotiv)'}
+par(mar = c(4, 4, 0.1, 0.1))
+knitr::include_graphics(c("images/victimasdelhimotiv_graf.png"))
+# par(mar = c(4, 4, 0.1, 0.1))
+# plot(a)
+# plot(sucesospol_barras)
+```
+
 
 ## Muertes por intervención policial (MIP)
 
-Las muertes por intervención policial informadas durante este semestre (gráfico \@ref(fig:victimasdelhimitiv)), en los reportes de prensa consultados, alcanzan más de 60 víctimas masculinas en edades comprendidas entre 20 y 30 años, aunque llama la atención que también se reportaron víctimas de menos de un año y de 70 años, que, aunque en mucha menor proporción, intriga la muerte de varones de esas edades en manos de la policía. La muerte de mujeres en manos de la policía es mucho menor que los hombres, siendo las víctimas mayores de 20 años las más afectadas. . Allí se puede apreciar, que las muertes violentas producto de HI casi se duplican mientras que la letalidad policial, prácticamente, permanece invariable hasta el momento.
+Las muertes por intervención policial informadas durante este semestre (gráfico \@ref(fig:victimasmilsexoedadpir)), en los reportes de prensa consultados, alcanzan más de 60 víctimas masculinas en edades comprendidas entre 20 y 30 años, aunque llama la atención que también se reportaron víctimas de menos de un año y de 70 años, que, aunque en mucha menor proporción, intriga la muerte de varones de esas edades en manos de la policía. La muerte de mujeres en manos de la policía es mucho menor que los hombres, siendo las víctimas mayores de 20 años las más afectadas. Allí se puede apreciar, que las muertes violentas producto de HI casi se duplican mientras que la letalidad policial, prácticamente, permanece invariable hasta el momento.
 
 ```{r sucesospolbarras, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
 source("sucesospolBarras.R", echo = F,local = knitr::knit_global())
 ```
 
-(ref:victimasmiledadsexo) Número víctimas y sucesos por intervención policial.
+(ref:victimasmiledadsexo) Número de muertes por intervención policial discriminados por edad y sexo.
 
-```{r victimasdelhimitiv, echo=FALSE, fig.show="hold" , out.width="50%", warning=FALSE,cache=F,fig.cap = '(ref:victimasmiledadsexo)'}
+```{r victimasmilsexoedadpir, echo=FALSE, out.width="90%",warning=FALSE,cache=F,fig.cap = '(ref:victimasmiledadsexo)'}
 par(mar = c(4, 4, 0.1, 0.1))
-plot(a)
-plot(sucesospol_barras)
+knitr::include_graphics(c("images/victimasmilsexoedad_piramide.png"))
+# par(mar = c(4, 4, 0.1, 0.1))
+# plot(a)
+# plot(sucesospol_barras)
 ```
 
-El desglose de los organismos policiales vinculados a los homicidios reportados en prensa, indica que en por lo menos 160 sucesos conocidos, estuvo involucrada la policía estadal en 35%, seguidos por la PNB y el CICPC en casi 100 casos cada uno, para un 20% respectivamente, siendo los cuerpos menos involucrados la policía municipal y las FANB.
+El desglose de los organismos policiales vinculados a los homicidios reportados en prensa (gráfico \@ref(fig:sucesosmil)), indica que en por lo menos 160 sucesos conocidos, estuvo involucrada la policía estadal en 35%, seguidos por la PNB y el CICPC en casi 100 casos cada uno, para un 20% respectivamente, siendo los cuerpos menos involucrados la policía municipal y las FANB.
 
+(ref:sucesosmil) Número y proporción de sucesos asociados a muertes por intervención policial discriminados según el cuerpo de seguridad involucrado.
+
+```{r sucesosmil, echo=FALSE, out.width="90%",warning=FALSE,cache=F,fig.cap = '(ref:sucesosmil)'}
+par(mar = c(4, 4, 0.1, 0.1))
+knitr::include_graphics(c("images/sucesospol_barras.png"))
+# par(mar = c(4, 4, 0.1, 0.1))
+# plot(a)
+# plot(sucesospol_barras)
+```
 
 ```{r victimasmilactivdona, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
 source("victimasmil_actividad_donagraf.R", echo = F,local = knitr::knit_global())

@@ -92,16 +92,16 @@ sucesospol_barras <- ggplot(porcent_grup_sucesospol,
              label.size = NA,
              family="Helvetica",
              size = 4)+
-  labs(title="Número y proporción de Sucesos por MIP",
-       subtitle = "discriminados por cuerpo policial que participó en la operación",
+  labs(#title="Número y proporción de Sucesos por MIP",
+       #subtitle = "discriminados por cuerpo policial que participó en la operación",
        caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(sucesospol)} ({sum(is.na(sucesospol$organanismo_seguridad_1)| sucesospol$organanismo_seguridad_1 == 'NA')} casos perdidos por información faltante) en {prensa_sucesospol_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"))+
-  xlab("") +
+  xlab("Cuerpo de seguridad") +
   ylab("Número de sucesos")
 
 sucesospol_barras
 
 
-#ggsave("images/sucesospol_barras.png")
+ggsave("images/sucesospol_barras.png",width=8,height=5)
 
 
 # sucesospol_barras <- ggplot(porcent_grup_sucesospol, aes(x=reorder(freq, organanismo_seguridad_1, function(x) length(x))))+

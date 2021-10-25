@@ -10,7 +10,7 @@ biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/bookdown-demo
 description: ""
-cover-image: "images/cover.png"
+cover-image: "images/cover.jpg"
 
 ---
 # Observatorio Venezolano de Violencia {-}

@@ -41,7 +41,7 @@ prensa_victimasmilsexoedad_sel
 
 
 #graficando
-a <- ggplot(victimasmilsexoedad_sel,
+victimasmilsexoedad_piramide <- ggplot(victimasmilsexoedad_sel,
             mapping = aes(x = edad__victima_1, fill = sexo_victima_1))+
   # female histogram
   geom_histogram(data = victimasmilsexoedad_sel %>% filter(sexo_victima_1 == "Femenino"),
@@ -73,15 +73,17 @@ a <- ggplot(victimasmilsexoedad_sel,
                                    color='black',
                                    angle=0,
                                    vjust = 0.5))+
-  labs(title="Número de víctimas por intervención policial",
-       subtitle = "discriminados por sexo y edad",
+  labs(#title="Número de víctimas por intervención policial",
+       #subtitle = "discriminados por sexo y edad",
        caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasmilsexoedad)} ({sum(is.na(victimasmilsexoedad$sexo_victima_1) | is.na(victimasmilsexoedad$edad__victima_1) |victimasmilsexoedad$edad__victima_1 == 99 | victimasmilsexoedad$sexo_victima_1 == 'No informa')} casos perdidos por edad y sexo faltante) en {prensa_victimasmilsexoedad_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"))+
   scale_fill_manual(values = c("red3","dodgerblue4"))+
   xlab("Edad (años)") +
   ylab("Número de víctimas")
 
 
-a
+victimasmilsexoedad_piramide
+
+ggsave("images/victimasmilsexoedad_piramide.png",width=8,height=5)
 
 #este grafico que sigue me esta dando problemas, el numero de victimas
 # segun la banda etarea no se corresponde con la realidad

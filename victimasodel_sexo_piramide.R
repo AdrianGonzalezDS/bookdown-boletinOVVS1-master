@@ -58,9 +58,9 @@ victimasexotrosdel_graf <- apyramid::age_pyramid(data = victimasexotrosdel_sel,
                       age_group = "tipo_delito",
                       split_by = "sexo_victima_2", show_midpoint=F)+
   # labels, titles, caption
-  labs(title="Número de víctimas por delitos distintos a homicidio intencional",
-       subtitle = "discriminados por sexo y tipo de delito",
-       caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasexotrosdel)} ({sum(is.na(victimasexotrosdel$sexo_victima_2) | is.na(victimasexotrosdel$tipo_delito) |victimasexotrosdel$tipo_delito == 'NA' | victimasexotrosdel$sexo_victima_2 == 'No informa')} casos perdidos por información sobre sexo faltante) \nen {prensa_victimasexotrosdel_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"),
+  labs(#title="Número de víctimas por delitos distintos a homicidio intencional",
+       #subtitle = "discriminados por sexo y tipo de delito",
+       caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasexotrosdel)} ({sum(is.na(victimasexotrosdel$sexo_victima_2) | is.na(victimasexotrosdel$tipo_delito) |victimasexotrosdel$tipo_delito == 'NA' | victimasexotrosdel$sexo_victima_2 == 'No informa')} casos perdidos por información sobre sexo faltante) en {prensa_victimasexotrosdel_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"),
     x = "Tipo de delito",
     y = "Número de víctimas",
     fill = "")+
@@ -74,6 +74,9 @@ victimasexotrosdel_graf <- apyramid::age_pyramid(data = victimasexotrosdel_sel,
     #panel.background = element_blank(),
     #axis.line = element_line(colour = "black"),
     plot.title = element_text(hjust = 0),
-    plot.caption = element_text(hjust=0, size=11, face = "italic"))
+    plot.caption = element_text(hjust=0, size=9, face = "italic"))
 
 victimasexotrosdel_graf
+
+ggsave("images/victimasexotrosdel_graf.png",width=8,height=5)
+

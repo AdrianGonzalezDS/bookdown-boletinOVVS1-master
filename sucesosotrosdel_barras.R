@@ -104,3 +104,5 @@ sucesosotrosdel_barras <- ggplot(porcent_grup_sucesosotrosdel,
 
 sucesosotrosdel_barras
 
+ggsave("images/sucesosotrosdel_barras.png",width=8,height=5)
+

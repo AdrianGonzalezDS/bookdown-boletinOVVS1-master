@@ -1,7 +1,11 @@
-fig:victimasvioletal
-fig:victimasdelhimitiv
-fig:victimasodeledadsexopirgraf
-fig:victimasodelsexopirgraf
+fig:victimasdelhisexoedadpir
+fig:victimasdelhimotiv
+fig:victimasmilsexoedadpir
+fig:sucesosmil
+fig:victimasodelsexoedadpir
+fig:sucesosodeltipodel
+fig:victimasodelsexotipodelpir
+fig:victimasodelsexoactivpir
 fig:victiagrsexdondepirgraf
 fig:victinnaedadsexopirgraf
 fig:victinnasexovictimarioconpirgraf

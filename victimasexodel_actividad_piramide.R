@@ -70,9 +70,9 @@ victimasexodelactiv_graf <- apyramid::age_pyramid(data = victimasexodelactiv_sel
                                                  age_group = "victima_era_2",
                                                  split_by = "sexo_victima_2", show_midpoint=F)+
   # labels, titles, caption
-  labs(title="Número de víctimas por delitos distintos a homicidio intencional",
-       subtitle = "discriminados por sexo y actividad",
-       caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasexodelactiv)} ({sum(is.na(victimasexodelactiv$sexo_victima_2) | is.na(victimasexodelactiv$victima_era_2) |victimasexodelactiv$victima_era_2 == 'NA'|victimasexodelactiv$victima_era_2 == 'No informa' | victimasexodelactiv$sexo_victima_2 == 'No informa')} casos perdidos por información faltante) \nen {prensa_victimasexodelactiv_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"),
+  labs(#title="Número de víctimas por delitos distintos a homicidio intencional",
+       #subtitle = "discriminados por sexo y actividad",
+       caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasexodelactiv)} ({sum(is.na(victimasexodelactiv$sexo_victima_2) | is.na(victimasexodelactiv$victima_era_2) |victimasexodelactiv$victima_era_2 == 'NA'|victimasexodelactiv$victima_era_2 == 'No informa' | victimasexodelactiv$sexo_victima_2 == 'No informa')} casos perdidos por información faltante) en {prensa_victimasexodelactiv_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"),
        x = "Actividad",
        y = "Número de víctimas",
        fill = "")+
@@ -89,9 +89,11 @@ victimasexodelactiv_graf <- apyramid::age_pyramid(data = victimasexodelactiv_sel
     #panel.background = element_blank(),
     #axis.line = element_line(colour = "black"),
     plot.title = element_text(hjust = 0),
-    plot.caption = element_text(hjust=0, size=11, face = "italic"))
+    plot.caption = element_text(hjust=0, size=9, face = "italic"))
 
 victimasexodelactiv_graf
+
+ggsave("images/victimasexodelactiv_graf.png",width=8,height=5)
 
 
 
