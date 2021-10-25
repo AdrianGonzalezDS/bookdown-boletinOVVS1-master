@@ -56,10 +56,11 @@ victimasodelNNA_piramide <- ggplot(data=victimasodelNNA_sel,aes(x=cut(edad__vict
         #axis.title.x = element_text(size= 7,color='black', angle=0, vjust = 0.5),
         axis.text = element_text(size= 11,color='black', angle=0, vjust = 0.5),
         strip.text = element_blank())+
-  labs(title="Número niñas, niños y adolescentes víctima de delitos",
-       subtitle = "discriminados por edad (0-17) y sexo",
+  labs(#title="Número niñas, niños y adolescentes víctima de delitos",
+       #subtitle = "discriminados por edad (0-17) y sexo",
        caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasodelNNA)} ({sum(is.na(victimasodelNNA$sexo_victima_2) | is.na(victimasodelNNA$edad__victima_2) |victimasodelNNA$edad__victima_2 == 99 | victimasodelNNA$sexo_victima_2 == 'No informa')} casos perdidos por edad y sexo faltante) en {prensa_victimasodelNNA_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"))
 
 victimasodelNNA_piramide
 
+ggsave("images/victimasodelNNA_piramide.png",width=8,height=5)
 

@@ -58,8 +58,8 @@ victimasexodelNNA_graf <- apyramid::age_pyramid(data = victimasexodelNNA_sel,
                                                  age_group = "tipo_delito",
                                                  split_by = "sexo_victima_2", show_midpoint=F)+
   # labels, titles, caption
-  labs(title="Número de niñas, niños y adolescentes víctima de delitos",
-       subtitle = "discriminados por sexo y tipo de delito",
+  labs(#title="Número de niñas, niños y adolescentes víctima de delitos",
+       #subtitle = "discriminados por sexo y tipo de delito",
        caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasexodelNNA)} ({sum(is.na(victimasexodelNNA$sexo_victima_2) | is.na(victimasexodelNNA$tipo_delito) |victimasexodelNNA$tipo_delito == 'NA' | victimasexodelNNA$sexo_victima_2 == 'No informa')} casos perdidos por información sobre sexo faltante) en {prensa_victimasexodelNNA_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"),
        x = "Tipo de delito",
        y = "Número de víctimas",
@@ -78,3 +78,4 @@ victimasexodelNNA_graf <- apyramid::age_pyramid(data = victimasexodelNNA_sel,
 
 victimasexodelNNA_graf
 
+ggsave("images/victimasexodelNNA_graf.png",width=8,height=5)

@@ -8,8 +8,10 @@ fig:victimasodelsexotipodelpir
 fig:victimasodelsexoactivpir
 fig:victimasagresiondelmotivpir
 fig:victimasagresiondeldondepir
-fig:victinnaedadsexopirgraf
-fig:victinnasexovictimarioconpirgraf
+fig:victimasdeledadsexopir
+fig:victimasexodelpir
+fig:victimasexodelvictimariorelpir
+fig:victimasexodelvictimarioconpir
 intro
 violencia-letal
 homicidio-intencional
