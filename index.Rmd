@@ -1,3 +1,5 @@
+
+
 --- 
 title: "Boletín primer semestre de 2021"
 author: "Observatorio Venezolano de Violencia"
@@ -12,8 +14,32 @@ github-repo: rstudio/bookdown-demo
 description: ""
 cover-image: "images/cover.jpg"
 
+
 ---
-# Observatorio Venezolano de Violencia {-}
+<!-- ```{=openxml} -->
+<!-- <w:p><w:r><w:br w:type="page"/></w:r></w:p> -->
+<!-- ``` -->
+
+<!-- ```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'docx'), fig.link='https://observatoriodeviolencia.org.ve/news/informe-semestral-regional-de-violencia-2021-guarico/'} -->
+<!-- knitr::include_graphics('images/cover.jpg', dpi = NA) -->
+<!-- ``` -->
+
+```{=openxml}
+<w:p><w:r><w:br w:type="page"/></w:r></w:p>
+```
+
+
+<!-- ```{r setup, include=FALSE} -->
+<!-- knitr::opts_chunk$set(echo = TRUE) -->
+<!-- source("render_toc.R") -->
+<!-- ``` -->
+
+
+# Observatotio Venezolano de Violencia {-}
+
+<!-- ```{r toc, echo=FALSE, include=identical(knitr:::pandoc_to(), 'docx')} -->
+<!-- render_toc("bookdown-boletinOVVS1.Rmd") -->
+<!-- ``` -->
 
 ```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://observatoriodeviolencia.org.ve/news/informe-semestral-regional-de-violencia-2021-guarico/'}
 knitr::include_graphics('images/cover.jpg', dpi = NA)

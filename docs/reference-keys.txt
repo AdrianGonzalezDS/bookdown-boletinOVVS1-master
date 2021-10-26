@@ -12,7 +12,8 @@ fig:victimasdeledadsexopir
 fig:victimasexodelpir
 fig:victimasexodelvictimariorelpir
 fig:victimasexodelvictimarioconpir
-intro
+presentación
+lo-observado
 violencia-letal
 homicidio-intencional
 muertes-por-intervención-policial-mip
