@@ -50,8 +50,8 @@ victimasexodelvictimariorelNNA_sel$relacion_victimario <- str_replace_all(victim
                                                                           "Amenaza de agresi n","Amenaza de agresión")
 victimasexodelvictimariorelNNA_sel$relacion_victimario <- str_replace_all(victimasexodelvictimariorelNNA_sel$relacion_victimario,
                                                                           "Desaparici n forzada","Desaparición forzada")
-# victimasexodelvictimariorelNNA_sel$relacion_victimario <- str_replace_all(victimasexodelvictimariorelNNA_sel$relacion_victimario,
-#                                                       "D?a de la semana en el d a","D?a de la semana en el d?a")
+ victimasexodelvictimariorelNNA_sel$relacion_victimario <- str_replace_all(victimasexodelvictimariorelNNA_sel$relacion_victimario,
+                                                       "Delincuencia com n","Delincuencia común")
 
 victimasexodelvictimariorelNNA_sel$prensa<- NULL
 victimasexodelvictimariorelNNA_sel
