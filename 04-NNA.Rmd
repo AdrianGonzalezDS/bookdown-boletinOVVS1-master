@@ -2,7 +2,7 @@
 
 ## Caracteríticas y tipo de delito
 
-La caracterización de los delitos cuando las víctimas son niños, niñas y adolescentes, permiten afirmar que los sucesos reportados en la prensa durante el primer semestre del año 2021, revelan más de 60 víctimas del sexo femenino, siendo el grupo entre 11 y 15 años el más afectado, seguido de niñas entre 6 y 10 años  y las adolescentes de 16 a 20 años. Las menores de 1 año son menos victimizadas pero también se observaron casos, al igual que en el sexo masculino. Aunque en el sexo masculino se mencionaron poco más de 30 casos, los más victimizados son los jóvenes de 16 a 20 años, seguidos de los niños entre 6 y 10 años y luego los menores con edades entre 11 y 15 años y 1 y 5 años respectivamente. 
+La caracterización de las víctimas cuando son niños, niñas y adolescentes, permiten afirmar que los sucesos reportados en la prensa durante el primer semestre del año 2021 (Gráfico \@ref(fig:victimasdeledadsexopir)), revelan que de las 401 víctimas mencionadas, solo en 281 casos se identificó la edad y el sexo de las mismas. Del sexo femenino, el grupo entre 11 y 15 años fue el más afectado, seguido de niñas entre 6 y 10 años  y las adolescentes de 16 a 20 años. Las menores de 1 año son menos victimizadas pero también se observaron casos, al igual que en el sexo masculino. En el sexo masculino, los grupos de edades son victimizados en proporciones más o menos pareja, siendo los más numerosos los jóvenes de 16 a 20 años, seguidos de los niños entre 6 y 10 años y luego los menores con edades entre 11 y 15 años y 1 y 5 años respectivamente, lo que puede dar cuenta de que en diferentes edades y  por diferentes razones o motivaciones los varones están expuestos a ser victimizados. Las niñas mientras tanto son más victimizadas en la etapa de transición de niñas a adolescentes, los que las hace vulnerables porque comienzan a relacionarse con jóvenes y adultos de diferentes edades, dados los cambios fisiológicos, físicos y psicológicos que experimentan. 
 
 ```{r victinnaedadsexopiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
 source("victimasodelNNA_edadsexo_piramide.R", echo = F,local = knitr::knit_global())
@@ -22,6 +22,8 @@ knitr::include_graphics(c("images/victimasodelNNA_piramide.png"))
 # plot(sucesospol_barras)
 ```
 
+Esa vulnerabilidad en el grupo femenino de 11 a 15 años, mencionado en el comentario anterior, confirma lo que se observa en el gráfico \@ref(fig:victimasexodelpir), sobre los tipos de delitos a los que son sometidas las niñas y adolescentes, lo que resulta importante y puede encender las alarmas. Como ya se comentó en el gráfico \@ref(fig:victimasexodelpir), son personas del sexo femenino las más victimizadas y el tipo de delito más producido contra ellas es la violación sexual, en casi 80 víctimas, así como otras agresiones sexuales; aunque en menor cantidad  también son víctimas de homicidio intencional y agresión en más de 20 casos respectivamente. Los delitos contra los niños y adolescentes son más letales como el homicidio con más de 60 casos y casi 40 víctimas de agresión. Pero también se reportaron víctimas de violación sexual, tentativa de homicidio, secuestro y otras agresiones sexuales en niños y adolescentes. Ello confirma la debilidad en los distintos grupos de edades en el sexo masculino al suponer que son víctimas de homicidio intencional y agresión en los grupos de mayor edad por el tipo de actividades y relaciones que mantienen, mientras que los más pequeños son víctimas de violaciones y otras agresiones sexuales, lo que imprime un comportamiento sesgado de los delitos de acuerdo con el sexo.
+
 (ref:victimassexodelNNA) Número niñas, niños, adolescentes y jóvenes víctimas de delitos discriminados según sexo y tipo de delito.
 
 ```{r victimasexodelpir, echo=FALSE, out.width="90%",warning=FALSE,cache=F,fig.cap = '(ref:victimassexodelNNA)'}
@@ -34,7 +36,7 @@ knitr::include_graphics(c("images/victimasexodelNNA_graf.png"))
 
 ## Los victimarios
 
-Los victimarios de esos niños, niñas y adolescentes son fundamentalmente familiares conocidos por las víctimas, siendo también victimarios la delincuencia común aunque presentes en más casos cuando se trata del sexo masculino.
+Los victimarios de esos niños, niñas y adolescentes en los 361 casos con información sobre el victimario y sexo de las víctimas, son fundamentalmente familiares conocidos por las víctimas, siendo también victimarios la delincuencia común aunque presentes en más casos cuando se trata del sexo masculino. Se mantiene entonces la tendencia sobre el factor de riesgo para los niños, niñas y adolescentes dentro del hogar, donde cotidianamente conviven con familiares que se convierten en sus victimarios y que por el carácter de cercanía no son sospechosos ante el resto de familiares y que a su vez los someten a amenazas para no ser descubiertos. 
 
 ```{r victinnasexovictimarioconpiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
 source("victimasdelNNA_sexovictimariocon_piramide.R", echo = F,local = knitr::knit_global())
@@ -55,7 +57,7 @@ knitr::include_graphics(c("images/victimasexodelvictimariorelNNA_graf.png"))
 # plot(sucesospol_barras)
 ```
 
-Si profundizamos en las características relacionales de las víctimas con sus mayores victimarios que son personas conocidas, nos encontramos con que los datos reportados y visualizados en la gráfica \@ref(fig:victimasexodelvictimarioconpir), indican que en ambos sexos son los parientes consanguíneos quienes cometen los delitos contra los niños, niñas y adolescentes. La diversidad de victimarios está más presente en el caso del sexo femenino, quienes además son víctimas de otro miembro del hogar, otro agresor conocido, vecinos y pareja o expareja. Los del sexo masculino además fueron victimizados por otro agresor conocido, un vecino, y pocos casos por otro miembro del hogar o amigo.
+Si profundizamos en las características relacionales de las víctimas con sus mayores victimarios que son personas conocidas, se observa que los datos reportados y visualizados en el gráfico \@ref(fig:victimasexodelvictimarioconpir), indican que en ambos sexos son los parientes consanguíneos quienes cometen los delitos contra los niños, niñas y adolescentes. La diversidad de victimarios está más presente en el caso del sexo femenino, quienes además son víctimas de otro miembro del hogar, otro agresor conocido, vecinos y pareja o expareja. Los del sexo masculino además fueron victimizados por otro agresor conocido, un vecino, y pocos casos por otro miembro del hogar o amigo.
 
 (ref:victimassexodelNNAvictimariocon) Número niñas, niños, adolescentes y jóvenes víctimas de delitos discriminados según sexo y relacion  con el victimario.
 

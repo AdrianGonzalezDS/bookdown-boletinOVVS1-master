@@ -25,7 +25,7 @@ bookdown::bs4_book:
 bookdown::word_document2:
     fig_caption: yes
     md_extensions: +footnotes
-    reference_docx: default
+    reference_docx: "custom_reference.docx"
     toc: yes
     fig_heigth: 3
     fig_width: 4

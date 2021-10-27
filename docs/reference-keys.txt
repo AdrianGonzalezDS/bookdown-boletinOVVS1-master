@@ -18,7 +18,7 @@ violencia-letal
 homicidio-intencional
 muertes-por-intervención-policial-mip
 violencia-no-letal
-otros-delitos-distintos-a-homicido-intencional-hi
+otros-delitos-distintos-a-homicidio-intencional-hi
 víctimas-de-agresión
 niñas-niños-y-adolescentes
 caracteríticas-y-tipo-de-delito
