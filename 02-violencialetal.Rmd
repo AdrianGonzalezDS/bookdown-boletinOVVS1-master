@@ -51,7 +51,7 @@ source("sucesospolBarras.R", echo = F,local = knitr::knit_global())
 
 (ref:victimasmiledadsexo) Número de muertes por intervención policial discriminados por edad y sexo.
 
-```{r victimasmilsexoedadpir, echo=FALSE, out.width="90%",warning=FALSE,cache=F,fig.cap = '(ref:victimasmiledadsexo)'}
+```{r victimasmilsexoedadpir, echo=FALSE, out.width="50%",warning=FALSE,cache=F,fig.cap = '(ref:victimasmiledadsexo)'}
 par(mar = c(4, 4, 0.1, 0.1))
 knitr::include_graphics(c("images/victimasmilsexoedad_piramide.png"))
 # par(mar = c(4, 4, 0.1, 0.1))
