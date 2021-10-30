@@ -15,9 +15,7 @@ source("victimasodelNNA_edadsexo_piramide.R", echo = F,local = knitr::knit_globa
 source("victimasdelNNA_sexotipodel_piramide.R", echo = F,local = knitr::knit_global())
 ```
 
-(ref:victimasdelNNAedadsexo) Número niñas, niños, adolescentes y jóvenes víctimas de delitos discriminados según sexo y edad.
-
-```{r victimasdeledadsexopir, echo=FALSE, out.width="90%",warning=FALSE,cache=F,fig.cap = '(ref:victimasdelNNAedadsexo)'}
+```{r victimasdeledadsexopir, echo=FALSE, fig.width = 3, fig.asp = 0.7,out.width='90%',warning=FALSE,cache=F,fig.cap = 'Número niñas, niños, adolescentes y jóvenes víctimas de delitos discriminados según sexo y edad.'}
 par(mar = c(4, 4, 0.1, 0.1))
 knitr::include_graphics(c("images/victimasodelNNA_piramide.png"))
 # par(mar = c(4, 4, 0.1, 0.1))
@@ -27,9 +25,7 @@ knitr::include_graphics(c("images/victimasodelNNA_piramide.png"))
 
 Esa vulnerabilidad en el grupo femenino de 11 a 15 años, mencionado en el comentario anterior, confirma lo que se observa en el gráfico \@ref(fig:victimasexodelpir), sobre los tipos de delitos a los que son sometidas las niñas y adolescentes, lo que resulta importante y puede encender las alarmas. Como ya se comentó en el gráfico \@ref(fig:victimasexodelpir), son personas del sexo femenino las más victimizadas y el tipo de delito más producido contra ellas es la violación sexual, en casi 80 víctimas, así como otras agresiones sexuales; aunque en menor cantidad  también son víctimas de homicidio intencional y agresión en más de 20 casos respectivamente. Los delitos contra los niños y adolescentes son más letales como el homicidio con más de 60 casos y casi 40 víctimas de agresión. Pero también se reportaron víctimas de violación sexual, tentativa de homicidio, secuestro y otras agresiones sexuales en niños y adolescentes. Ello confirma la debilidad en los distintos grupos de edades en el sexo masculino al suponer que son víctimas de homicidio intencional y agresión en los grupos de mayor edad por el tipo de actividades y relaciones que mantienen, mientras que los más pequeños son víctimas de violaciones y otras agresiones sexuales, lo que imprime un comportamiento sesgado de los delitos de acuerdo con el sexo.
 
-(ref:victimassexodelNNA) Número niñas, niños, adolescentes y jóvenes víctimas de delitos discriminados según sexo y tipo de delito.
-
-```{r victimasexodelpir, echo=FALSE, out.width="90%",warning=FALSE,cache=F,fig.cap = '(ref:victimassexodelNNA)'}
+```{r victimasexodelpir, echo=FALSE, fig.width = 3, fig.asp = 0.7,out.width='90%',warning=FALSE,cache=F,fig.cap = 'Número niñas, niños, adolescentes y jóvenes víctimas de delitos discriminados según sexo y tipo de delito.'}
 par(mar = c(4, 4, 0.1, 0.1))
 knitr::include_graphics(c("images/victimasexodelNNA_graf.png"))
 # par(mar = c(4, 4, 0.1, 0.1))
@@ -57,9 +53,7 @@ source("victimasdelNNA_sexovictimariocon_piramide.R", echo = F,local = knitr::kn
 source("victimasdelNNA_sexovictimariorel_piramide.R", echo = F,local = knitr::knit_global())
 ```
 
-(ref:victimassexodelNNAvictimariorel) Número niñas, niños, adolescentes y jóvenes víctimas de delitos discriminados según sexo y tipo de victimario.
-
-```{r victimasexodelvictimariorelpir, echo=FALSE, out.width="90%",warning=FALSE,cache=F,fig.cap = '(ref:victimassexodelNNAvictimariorel)'}
+```{r victimasexodelvictimariorelpir, echo=FALSE, fig.width = 3, fig.asp = 0.7,out.width='90%',warning=FALSE,cache=F,fig.cap = 'Número niñas, niños, adolescentes y jóvenes víctimas de delitos discriminados según sexo y tipo de victimario.'}
 par(mar = c(4, 4, 0.1, 0.1))
 knitr::include_graphics(c("images/victimasexodelvictimariorelNNA_graf.png"))
 # par(mar = c(4, 4, 0.1, 0.1))
@@ -69,9 +63,7 @@ knitr::include_graphics(c("images/victimasexodelvictimariorelNNA_graf.png"))
 
 Si profundizamos en las características relacionales de las víctimas con sus mayores victimarios que son personas conocidas, se observa que los datos reportados y visualizados en el gráfico \@ref(fig:victimasexodelvictimarioconpir), indican que en ambos sexos son los parientes consanguíneos quienes cometen los delitos contra los niños, niñas y adolescentes. La diversidad de victimarios está más presente en el caso del sexo femenino, quienes además son víctimas de otro miembro del hogar, otro agresor conocido, vecinos y pareja o expareja. Los del sexo masculino además fueron victimizados por otro agresor conocido, un vecino, y pocos casos por otro miembro del hogar o amigo.
 
-(ref:victimassexodelNNAvictimariocon) Número niñas, niños, adolescentes y jóvenes víctimas de delitos discriminados según sexo y relacion  con el victimario.
-
-```{r victimasexodelvictimarioconpir, echo=FALSE, out.width="90%",warning=FALSE,cache=F,fig.cap = '(ref:victimassexodelNNAvictimariocon)'}
+```{r victimasexodelvictimarioconpir, echo=FALSE, fig.width = 3, fig.asp = 0.7,out.width='90%',warning=FALSE,cache=F,fig.cap = 'Número niñas, niños, adolescentes y jóvenes víctimas de delitos discriminados según sexo y relacion  con el victimario.'}
 par(mar = c(4, 4, 0.1, 0.1))
 knitr::include_graphics(c("images/victimasexodelvictimarioconNNA_graf.png"))
 # par(mar = c(4, 4, 0.1, 0.1))

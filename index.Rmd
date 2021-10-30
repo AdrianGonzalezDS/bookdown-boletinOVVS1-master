@@ -9,6 +9,7 @@ output: bookdown::gitbook
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
+csl: apa-5th-edition.csl
 link-citations: yes
 github-repo: rstudio/bookdown-demo
 description: ""

@@ -96,8 +96,8 @@ sucesosotrosdel_barras <- ggplot(porcent_grup_sucesosotrosdel,
              label.size = NA,
              family="Helvetica",
              size = 3)+
-  labs(title="Proporción y número de sucesos por delitos distintos a HI",
-       subtitle = "discriminados según el tipo de delito",
+  labs(#title="Proporción y número de sucesos por delitos distintos a HI",
+       #subtitle = "discriminados según el tipo de delito",
        caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(sucesosotrosdel)} ({sum(is.na(sucesosotrosdel$tipo_delito)| sucesosotrosdel$tipo_delito == 'NA'|is.na(sucesosotrosdel$infodelito2)|sucesosotrosdel$infodelito2 == 'NA')} casos perdidos por información faltante) en {prensa_sucesosotrosdel_sel} medios de prensa consultados \nPeríodo de recolección de información: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"))+
   xlab("") +
   ylab("Número de sucesos")
