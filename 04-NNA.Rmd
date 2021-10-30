@@ -1,6 +1,9 @@
 # Niñas, niños y adolescentes
 
-## Caracteríticas y tipo de delito
+## Características y tipo de delito
+
+<!---BLOCK_MULTICOL_START--->
+
 
 La caracterización de las víctimas cuando son niños, niñas y adolescentes, permiten afirmar que los sucesos reportados en la prensa durante el primer semestre del año 2021 (Gráfico \@ref(fig:victimasdeledadsexopir)), revelan que de las 401 víctimas mencionadas, solo en 281 casos se identificó la edad y el sexo de las mismas. Del sexo femenino, el grupo entre 11 y 15 años fue el más afectado, seguido de niñas entre 6 y 10 años  y las adolescentes de 16 a 20 años. Las menores de 1 año son menos victimizadas pero también se observaron casos, al igual que en el sexo masculino. En el sexo masculino, los grupos de edades son victimizados en proporciones más o menos pareja, siendo los más numerosos los jóvenes de 16 a 20 años, seguidos de los niños entre 6 y 10 años y luego los menores con edades entre 11 y 15 años y 1 y 5 años respectivamente, lo que puede dar cuenta de que en diferentes edades y  por diferentes razones o motivaciones los varones están expuestos a ser victimizados. Las niñas mientras tanto son más victimizadas en la etapa de transición de niñas a adolescentes, los que las hace vulnerables porque comienzan a relacionarse con jóvenes y adultos de diferentes edades, dados los cambios fisiológicos, físicos y psicológicos que experimentan. 
 
@@ -34,7 +37,14 @@ knitr::include_graphics(c("images/victimasexodelNNA_graf.png"))
 # plot(sucesospol_barras)
 ```
 
+
+<!---BLOCK_MULTICOL_STOP{widths: [3,3], space: 0.2, sep: true}--->
+
+
 ## Los victimarios
+
+<!---BLOCK_MULTICOL_START--->
+
 
 Los victimarios de esos niños, niñas y adolescentes en los 361 casos con información sobre el victimario y sexo de las víctimas, son fundamentalmente familiares conocidos por las víctimas, siendo también victimarios la delincuencia común aunque presentes en más casos cuando se trata del sexo masculino. Se mantiene entonces la tendencia sobre el factor de riesgo para los niños, niñas y adolescentes dentro del hogar, donde cotidianamente conviven con familiares que se convierten en sus victimarios y que por el carácter de cercanía no son sospechosos ante el resto de familiares y que a su vez los someten a amenazas para no ser descubiertos. 
 
@@ -70,3 +80,4 @@ knitr::include_graphics(c("images/victimasexodelvictimarioconNNA_graf.png"))
 ```
 
 
+<!---BLOCK_MULTICOL_STOP{widths: [3,3], space: 0.2, sep: true}--->

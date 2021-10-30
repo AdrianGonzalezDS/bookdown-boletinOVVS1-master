@@ -16,41 +16,16 @@ cover-image: "images/PORTADA_BOLETIN_ADRIAN.jpg"
 
 
 ---
-```{r officedown, include=FALSE}
-library(officedown)
-library(officer)
-library(rvg)
-```
 
-<!-- ```{=openxml} -->
-<!-- <w:p><w:r><w:br w:type="page"/></w:r></w:p> -->
-<!-- ``` -->
+![](images/PORTADA_BOLETIN_ADRIAN.jpg)
 
-<!-- ```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'docx'), fig.link='https://observatoriodeviolencia.org.ve/news/informe-semestral-regional-de-violencia-2021-guarico/'} -->
-<!-- knitr::include_graphics('images/cover.jpg', dpi = NA) -->
-<!-- ``` -->
-
-```{=openxml}
-<w:p><w:r><w:br w:type="page"/></w:r></w:p>
-```
+# Observatorio Venezolano de Violencia {-}
 
 
-<!-- ```{r setup, include=FALSE} -->
-<!-- knitr::opts_chunk$set(echo = TRUE) -->
-<!-- source("render_toc.R") -->
-<!-- ``` -->
-
-
-# Observatotio Venezolano de Violencia {-}
-
-<!-- ```{r toc, echo=FALSE, include=identical(knitr:::pandoc_to(), 'docx')} -->
-<!-- render_toc("bookdown-boletinOVVS1.Rmd") -->
-<!-- ``` -->
 
 ```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://observatoriodeviolencia.org.ve/news/informe-semestral-regional-de-violencia-2021-guarico/'}
 knitr::include_graphics('images/PORTADA_BOLETIN_ADRIAN.jpg', dpi = NA)
 ```
-
 
 ```{r victimasdelhiedadsexo, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
 source("victimasdelito.R", echo = F,local = knitr::knit_global())

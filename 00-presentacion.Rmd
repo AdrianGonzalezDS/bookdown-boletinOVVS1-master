@@ -1,5 +1,11 @@
+
 # Presentación
+
+<!---BLOCK_MULTICOL_START--->
+
 
 Nos complace presentarles el primer número del Boletín del Observatorio de Prensa del Observatorio Venezolano de Violencia (OVV). Este Boletín es el esfuerzo del trabajo de recolección, sistematización, análisis e interpretación de las noticias de sucesos violentos reportados en la prensa escrita y digital tanto estadal como nacional, por los 15 equipos de trabajo que hacen parte de las sedes de los Observatorios Regionales presentes en los estados: Amazonas Aragua, Bolívar, Carabobo Falcón, Guárico, Lara, Mérida, Monagas, Nueva Esparta, Región Capital, Sucre, Táchira, Trujillo y Zulia.
 
 La información que aquí presentamos no son todos los delitos sobre violencia interpersonal ocurridos durante el primer semestre del año 2021, sino aquellos que fueron reportados en la prensa nacional y regional disponible y consultada, considerando la falta de muchos medios que por diversas razones han cesado, o por la censura que pesa sobre ellos y les impide cubrir o informar a la sociedad. Esta información extraída de la prensa fue procesada bajo una metodología de trabajo que implica la organización de la información recabada en un instrumento cuyas preguntas pretenden caracterizar los delitos, para posteriormente ser catalogados, de acuerdo con la Clasificación Internacional de Delitos con Fines Estadísticos de la Oficina de las Naciones Unidas contra la Droga y el Delito [@UNODC2015]. 
+
+<!---BLOCK_MULTICOL_STOP{widths: [3,3], space: 0.2, sep: true}--->

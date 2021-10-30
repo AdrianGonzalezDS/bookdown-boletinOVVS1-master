@@ -1,6 +1,15 @@
+```{r officedown, include=FALSE}
+library(officedown)
+library(officer)
+
+```
+
+
 # Violencia letal
 
 ## Homicidio intencional
+
+<!---BLOCK_MULTICOL_START--->
 
 Entendiendo el homicidio intencional como la “muerte ilícita causada a una persona con la intención de causarle la muerte u ocasionarle lesiones graves” [@UNODC2015,19], no cabe duda de que este delito sigue siendo de los más graves que se cometen y son reportados por la prensa consultada. Para este primer semestre del año 2021 la prensa nacional y regional consultada, registró un total de 652 muertes por homicidio intencional, de los cuales sólo se tuvo información sobre edad y sexo en 468 casos. Así puede observarse en el Gráfico \@ref(fig:victimasdelhisexoedadpir) que este delito discriminado por edad y sexo muestra lo que ha sido una tendencia en el país y en Latinoamérica, y son las muertes de hombres jóvenes menores de 30 años, pero también puede notarse que durante el periodo en estudio fueron recogidos mayoritariamente por la prensa el homicidio al sexo femenino en edades entre 11 y 25 años, fundamentalmente el grupo entre adolescentes de 11 a 15 años. Y aunque con las menores proporciones también sucedió con octogenarias y menores de 1 año de edad. 
 
@@ -8,11 +17,9 @@ Entendiendo el homicidio intencional como la “muerte ilícita causada a una pe
 source("victimasmil_edadsexo_piramide.R", echo = F,local = knitr::knit_global())
 ```
 
-
 ```{r victimasdelhipiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
 source("victimasdelhi_edadsexo_piramide.R", echo = F,local = knitr::knit_global())
 ```
-
 
 ```{r victimasdelhimotivpiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
 source("victimasdelhi_motivacion_piramide.R", echo = F,local = knitr::knit_global())
@@ -20,7 +27,7 @@ source("victimasdelhi_motivacion_piramide.R", echo = F,local = knitr::knit_globa
 
 (ref:victimasdeledadsexo) Número víctimas por homicidio intencional discriminadas según edad y sexo.
 
-```{r victimasdelhisexoedadpir, echo=FALSE, out.width="90%",warning=FALSE,cache=F,fig.cap = '(ref:victimasdeledadsexo)'}
+```{r victimasdelhisexoedadpir, echo=FALSE, out.width="10%",warning=FALSE,cache=F,fig.cap = '(ref:victimasdeledadsexo)'}
 par(mar = c(4, 4, 0.1, 0.1))
 knitr::include_graphics(c("images/victimasdelhi_piramide.png"))
 # par(mar = c(4, 4, 0.1, 0.1))
@@ -40,8 +47,11 @@ knitr::include_graphics(c("images/victimasdelhimotiv_graf.png"))
 # plot(sucesospol_barras)
 ```
 
+<!---BLOCK_MULTICOL_STOP{widths: [3,3], space: 0.2, sep: true}--->
 
 ## Muertes por intervención policial (MIP)
+
+<!---BLOCK_MULTICOL_START--->
 
 Las muertes por intervención policial informadas durante el primer semestre  del 2021, en los reportes de prensa consultados, alcanzan un total de 562 víctimas (gráfico \@ref(fig:victimasmilsexoedadpir)). Sin embargo, de ese total la prensa solo mencionó en 207 casos información de edad y sexo de las víctimas, entre las cuales 60 son de sexo masculino, en edades comprendidas entre 20 y 30 años, aunque llama la atención que también se reportaron víctimas de menos de un año y de 70 años, que, aunque en mucha menor proporción, intriga la muerte de varones de esas edades en manos de la policía. La muerte de mujeres por funcionarios policiales es mucho menor que los hombres, siendo las víctimas mayores de 20 años las más afectadas. Las cifras de víctimas del sexo femenino es inferior, y puede deberse a que  son las menos expuestas, aunque el hecho de que sean mayores de 20 años, pueden dar cuenta de víctimas que se mueven fuera del hogar por razones de trabajo o estudio, o son victimizadas por policías por estar en involucradas en delitos o estar en lugares cercanos donde funcionarios policiales realizaron sus acciones.
 
@@ -79,3 +89,4 @@ source("victimasmil_actividad_donagraf.R", echo = F,local = knitr::knit_global()
 source("victimasmil_ocupacion_donagraf.R", echo = F,local = knitr::knit_global())
 ```
 
+<!---BLOCK_MULTICOL_STOP{widths: [3,3], space: 0.2, sep: true}--->
