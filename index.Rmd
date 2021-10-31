@@ -15,8 +15,13 @@ github-repo: rstudio/bookdown-demo
 description: ""
 cover-image: "images/PORTADA_BOLETIN_ADRIAN.jpg"
 
-
 ---
+
+```{r officedown, include=FALSE}
+library(officedown)
+library(officer)
+
+```
 
 ![](images/PORTADA_BOLETIN_ADRIAN.jpg)
 
