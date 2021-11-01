@@ -13,7 +13,7 @@ csl: apa.csl
 link-citations: yes
 github-repo: rstudio/bookdown-demo
 description: ""
-cover-image: "images/PORTADA_BOLETIN_ADRIAN.jpg"
+cover-image: "images/PORTADA_BOLETIN_SEMESTRAL2.jpg"
 
 ---
 
@@ -23,14 +23,14 @@ library(officer)
 
 ```
 
-![](images/PORTADA_BOLETIN_ADRIAN.jpg)
+![](images/PORTADA_BOLETIN_SEMESTRAL2.jpg)
 
 # LACSO-OVV {-}
 
 
 
 ```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html'), fig.link='https://observatoriodeviolencia.org.ve/news/informe-semestral-regional-de-violencia-2021-guarico/'}
-knitr::include_graphics('images/PORTADA_BOLETIN_ADRIAN.jpg', dpi = NA)
+knitr::include_graphics('images/PORTADA_BOLETIN_SEMESTRAL2.jpg', dpi = NA)
 ```
 
 ```{r victimasdelhiedadsexo, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
