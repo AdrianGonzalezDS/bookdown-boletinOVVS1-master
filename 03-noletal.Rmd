@@ -69,6 +69,8 @@ knitr::include_graphics(c("images/victimasexodelactiv_graf.png"))
 
 <!---BLOCK_MULTICOL_STOP{widths: [3,3], space: 0.2, sep: true}--->
 
+<br>
+<br>
 
 ## Víctimas de agresión
 

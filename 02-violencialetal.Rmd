@@ -43,6 +43,8 @@ knitr::include_graphics(c("images/victimasdelhimotiv_graf.png"))
 
 <!---BLOCK_MULTICOL_STOP{widths: [3,3], space: 0.2, sep: true}--->
 
+<br>
+
 ## Muertes por intervención policial (MIP)
 
 <!---BLOCK_MULTICOL_START--->
@@ -63,7 +65,7 @@ knitr::include_graphics(c("images/victimasmilsexoedad_piramide.png"))
 
 Las cifras de víctimas del sexo femenino es inferior, y puede deberse a que  son las menos expuestas, aunque el hecho de que sean mayores de 20 años, pueden dar cuenta de víctimas que se mueven fuera del hogar por razones de trabajo o estudio, o son victimizadas por policías por estar en involucradas en delitos o estar en lugares cercanos donde funcionarios policiales realizaron sus acciones.
 
-El desglose de los organismos policiales vinculados a los homicidios reportados en prensa (gráfico \@ref(fig:sucesosmil)), indica que en los 465 casos conocidos, por lo menos en 160 sucesos, estuvo involucrada la policía estadal con 35%, seguidos por la PNB y el CICPC en casi 100 casos cada uno, para un 20% respectivamente, siendo los cuerpos menos involucrados la policía municipal y las FANB. Aquí puede apreciarse como ha disminuido el protagonismo de la PNB, especialmente del grupo FAES, quien ha recibido innumerables acusaciones y denuncias tanto dentro del territorio nacional, como a nivel internacional sobre todo por las denuncias en los informes de la Alta Comisionada de las Naciones Unidas para los Derechos Humanos, Michelle Bachelet, lo que ha obligado al gobierno a pensar la política de represión implementada a través de este grupo comando e incluso del CICPC, cuerpo de investigación que se ha visto muy involucrado en casos de homicidios, sobre todo de ejecuciones extrajudiciales.
+El desglose de los organismos policiales vinculados a los homicidios reportados en prensa (gráfico \@ref(fig:sucesosmil)), indica que, en los 465 casos conocidos, por lo menos en 160 sucesos, estuvo involucrada la policía estadal con 35%, seguidos por la PNB y el CICPC en casi 100 casos cada uno, para un 20% respectivamente, siendo los cuerpos menos involucrados la policía municipal y las FANB. Aquí puede apreciarse como ha disminuido el protagonismo de la PNB, especialmente del grupo FAES, quien ha recibido innumerables acusaciones y denuncias tanto dentro del territorio nacional, como a nivel internacional sobre todo por las denuncias en los informes de la Alta Comisionada de las Naciones Unidas para los Derechos Humanos, Michelle Bachelet, lo que ha obligado al gobierno a pensar la política de represión implementada a través de este grupo comando e incluso del CICPC, cuerpo de investigación que se ha visto muy involucrado en casos de homicidios, sobre todo de ejecuciones extrajudiciales.
 
 ```{r sucesosmil, echo=FALSE,fig.width = 3, fig.asp = 0.7,out.width='90%',warning=FALSE,cache=F,fig.cap = 'Número y proporción de sucesos asociados a muertes por intervención policial discriminados según el cuerpo de seguridad involucrado.'}
 par(mar = c(4, 4, 0.1, 0.1))

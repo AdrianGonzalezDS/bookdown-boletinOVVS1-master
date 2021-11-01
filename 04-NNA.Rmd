@@ -1,11 +1,11 @@
-# Niñas, niños y adolescentes
+# Niñas, niños, adolescentes y jóvenes
 
 ## Características y tipo de delito
 
 <!---BLOCK_MULTICOL_START--->
 
 
-La caracterización de las víctimas cuando son niños, niñas y adolescentes, permiten afirmar que los sucesos reportados en la prensa durante el primer semestre del año 2021 (Gráfico \@ref(fig:victimasdeledadsexopir)), revelan que de las 401 víctimas mencionadas, solo en 281 casos se identificó la edad y el sexo de las mismas. Del sexo femenino, el grupo entre 11 y 15 años fue el más afectado, seguido de niñas entre 6 y 10 años  y las adolescentes de 16 a 20 años. Las menores de 1 año son menos victimizadas pero también se observaron casos, al igual que en el sexo masculino. En el sexo masculino, los grupos de edades son victimizados en proporciones más o menos pareja, siendo los más numerosos los jóvenes de 16 a 20 años, seguidos de los niños entre 6 y 10 años y luego los menores con edades entre 11 y 15 años y 1 y 5 años respectivamente, lo que puede dar cuenta de que en diferentes edades y  por diferentes razones o motivaciones los varones están expuestos a ser victimizados. Las niñas mientras tanto son más victimizadas en la etapa de transición de niñas a adolescentes, los que las hace vulnerables porque comienzan a relacionarse con jóvenes y adultos de diferentes edades, dados los cambios fisiológicos, físicos y psicológicos que experimentan. 
+La caracterización de las víctimas cuando son niños, niñas y adolescentes, permiten afirmar que los sucesos reportados en la prensa durante el primer semestre del año 2021 (Gráfico \@ref(fig:victimasdeledadsexopir)), revelan que, de las 401 víctimas mencionadas, solo en 281 casos se identificó la edad y el sexo de las mismas. Del sexo femenino, el grupo entre 11 y 15 años fue el más afectado, seguido de niñas entre 6 y 10 años  y las adolescentes de 16 a 20 años. Las menores de 1 año son menos victimizadas pero también se observaron casos, al igual que en el sexo masculino. En el sexo masculino, los grupos de edades son victimizados en proporciones más o menos pareja, siendo los más numerosos los jóvenes de 16 a 20 años, seguidos de los niños entre 6 y 10 años y luego los menores con edades entre 11 y 15 años y 1 y 5 años respectivamente, lo que puede dar cuenta de que en diferentes edades y  por diferentes razones o motivaciones los varones están expuestos a ser victimizados. Las niñas mientras tanto son más victimizadas en la etapa de transición de niñas a adolescentes, los que las hace vulnerables porque comienzan a relacionarse con jóvenes y adultos de diferentes edades, dados los cambios fisiológicos, físicos y psicológicos que experimentan. 
 
 ```{r victinnaedadsexopiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
 source("victimasodelNNA_edadsexo_piramide.R", echo = F,local = knitr::knit_global())
@@ -23,7 +23,7 @@ knitr::include_graphics(c("images/victimasodelNNA_piramide.png"))
 # plot(sucesospol_barras)
 ```
 
-Esa vulnerabilidad en el grupo femenino de 11 a 15 años, mencionado en el comentario anterior, confirma lo que se observa en el gráfico \@ref(fig:victimasexodelpir), sobre los tipos de delitos a los que son sometidas las niñas y adolescentes, lo que resulta importante y puede encender las alarmas. Como ya se comentó en el gráfico \@ref(fig:victimasexodelpir), son personas del sexo femenino las más victimizadas y el tipo de delito más producido contra ellas es la violación sexual, en casi 80 víctimas, así como otras agresiones sexuales; aunque en menor cantidad  también son víctimas de homicidio intencional y agresión en más de 20 casos respectivamente. Los delitos contra los niños y adolescentes son más letales como el homicidio con más de 60 casos y casi 40 víctimas de agresión. Pero también se reportaron víctimas de violación sexual, tentativa de homicidio, secuestro y otras agresiones sexuales en niños y adolescentes. Ello confirma la debilidad en los distintos grupos de edades en el sexo masculino al suponer que son víctimas de homicidio intencional y agresión en los grupos de mayor edad por el tipo de actividades y relaciones que mantienen, mientras que los más pequeños son víctimas de violaciones y otras agresiones sexuales, lo que imprime un comportamiento sesgado de los delitos de acuerdo con el sexo.
+Esa vulnerabilidad en el grupo femenino de 11 a 15 años, mencionado en el comentario anterior, confirma lo que se observa en el gráfico \@ref(fig:victimasexodelpir), sobre los tipos de delitos a los que son sometidas las niñas y adolescentes, lo que resulta importante y puede encender las alarmas. Como ya se comentó en el gráfico \@ref(fig:victimasdeledadsexopir), son personas del sexo femenino las más victimizadas y el tipo de delito más producido contra ellas es la violación sexual, en casi 80 víctimas, así como otras agresiones sexuales; aunque en menor cantidad  también son víctimas de homicidio intencional y agresión en más de 20 casos respectivamente. Los delitos contra los niños y adolescentes son más letales como el homicidio con más de 60 casos y casi 40 víctimas de agresión. Pero también se reportaron víctimas de violación sexual, tentativa de homicidio, secuestro y otras agresiones sexuales en niños y adolescentes. Ello confirma la debilidad en los distintos grupos de edades en el sexo masculino al suponer que son víctimas de homicidio intencional y agresión en los grupos de mayor edad por el tipo de actividades y relaciones que mantienen, mientras que los más pequeños son víctimas de violaciones y otras agresiones sexuales, lo que imprime un comportamiento sesgado de los delitos de acuerdo con el sexo.
 
 ```{r victimasexodelpir, echo=FALSE, fig.width = 3, fig.asp = 0.7,out.width='90%',warning=FALSE,cache=F,fig.cap = 'Número niñas, niños, adolescentes y jóvenes víctimas de delitos discriminados según sexo y tipo de delito.'}
 par(mar = c(4, 4, 0.1, 0.1))
@@ -36,6 +36,8 @@ knitr::include_graphics(c("images/victimasexodelNNA_graf.png"))
 
 <!---BLOCK_MULTICOL_STOP{widths: [3,3], space: 0.2, sep: true}--->
 
+<br>
+<br>
 
 ## Los victimarios
 
