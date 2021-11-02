@@ -10,6 +10,7 @@ library(writexl)#requerido para exportar df a excel
 library(ggrepel)#requerido para usar geom_text_repel
 library(janitor)#requerida para usar adorn total
 library(flextable)
+library(gt)
 #library(reshape2)#requerido para el paquete melt
 Sys.setlocale("LC_TIME","Spanish_Spain.1252")
 startdate <- as.Date(c("2021-01-01"))
@@ -67,7 +68,7 @@ porcent_grup_victimasdelhiestados <- victimasdelhiestados_sel %>%
   arrange(desc(`freq`)) %>% #solo organiza en orden alfabetico
   mutate(label_pos = cumsum(perc) - perc / 2,
          porcentaje = paste0(round(perc * 100,1),"%"))%>%
-  adorn_totals(where = "row", fill = "100%")
+   adorn_totals(where = "row", fill = "100%")
 
 porcent_grup_victimasdelhiestados
 
@@ -90,9 +91,7 @@ names(tabla_victimasdelhiestados)[names(tabla_victimasdelhiestados) ==
                                     "porcentaje"] <- "Porcentaje"
 tabla_victimasdelhiestados
 
-ft <- flextable(tabla_victimasdelhiestados)
-ft <- theme_vanilla(ft)
-ft
+
 #graficando
 
 victimasdelhiestados_barras <- ggplot(porcent_grup_victimasdelhiestados,
