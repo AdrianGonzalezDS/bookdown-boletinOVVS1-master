@@ -15,14 +15,14 @@ enddate <- as.Date(c("2021-06-30"))
 
 #Prepare datos
 victimasmilsexoedad <- victimasmil %>%
-  select(mil,edad__victima_1, sexo_victima_1,prensa,numero_victimas_1) %>%
-  filter(mil == "Si")
+  select(informacion_sociodem_1,edad__victima_1, sexo_victima_1,prensa,numero_victimas_1) %>%
+  filter(informacion_sociodem_1 == "Si" | informacion_sociodem_1 == "No")
 
 victimasmilsexoedad
 
 victimasmilsexoedad_sel <- victimasmil %>%
-  select(mil,edad__victima_1, sexo_victima_1,prensa, numero_victimas_1) %>%
-  filter(mil == "Si" &
+  select(informacion_sociodem_1,edad__victima_1, sexo_victima_1,prensa, numero_victimas_1) %>%
+  filter(informacion_sociodem_1 == "Si" | informacion_sociodem_1 == "No" &
            !edad__victima_1 %in% c(99, "No informa", NA, "NA") &
            !sexo_victima_1 %in% c("No informa", NA, "NA"))
 
@@ -88,32 +88,32 @@ ggsave("images/victimasmilsexoedad_piramide.png",width=8,height=5)
 #este grafico que sigue me esta dando problemas, el numero de victimas
 # segun la banda etarea no se corresponde con la realidad
 #
-victimasmil_piramide <- ggplot(data=victimasmilsexoedad_sel,aes(x=cut(edad__victima_1,
-                                                                breaks=c(-1,seq(0,100,5))),
-                                                          fill=sexo_victima_1)) +
-  geom_bar(data=subset(victimasmilsexoedad_sel,sexo_victima_1=="Femenino")) +
-  geom_bar(data=subset(victimasmilsexoedad_sel,sexo_victima_1=="Masculino"),aes(y=..count..*(-1))) +
-  scale_x_discrete(labels=c("< 1",paste0(seq(1,91,5),"-",seq(5,100,5))), drop=T) +
-  scale_y_continuous(breaks=seq(-70,70,10),labels=abs(seq(-70,70,10)))+
-  xlab("Edad (años)") + ylab("Número de víctimas") +
-  coord_flip()+
-  #bbc_style()+
-  theme_classic( )+
-  #labs(x = "Edad (a?os)", y = "N?mero de v?ctimas", size = 2)+
-  scale_fill_manual(values = c("red3","dodgerblue4"))+
-  theme(strip.background = element_blank(),
-        legend.title = element_blank(),
-        legend.position = "bottom",
-        legend.text = element_text(size = 9 ,color='black',
-                                   angle=0,vjust = 0.5),
-        #axis.title.y = element_text(color='black', angle=90, vjust = 0.5),
-        #axis.title.x = element_text(size= 7,color='black', angle=0, vjust = 0.5),
-        axis.text = element_text(size= 11,color='black', angle=0, vjust = 0.5),
-        strip.text = element_blank())+
-  labs(title="Muertes por intervencion policial",
-       caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasodel)} ({sum(is.na(victimasodel$sexo_victima_2) | is.na(victimasodel$edad__victima_2) |victimasodel$edad__victima_2 == 99 | victimasodel$sexo_victima_2 == 'No informa')} casos perdidos por edad y sexo faltante) en {prensa_victimasodel_sel} medios de prensa consultados \nPer?odo de recolecci?n de informaci?n: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"))
-
-victimasmil_piramide
+# victimasmil_piramide <- ggplot(data=victimasmilsexoedad_sel,aes(x=cut(edad__victima_1,
+#                                                                 breaks=c(-1,seq(0,100,5))),
+#                                                           fill=sexo_victima_1)) +
+#   geom_bar(data=subset(victimasmilsexoedad_sel,sexo_victima_1=="Femenino")) +
+#   geom_bar(data=subset(victimasmilsexoedad_sel,sexo_victima_1=="Masculino"),aes(y=..count..*(-1))) +
+#   scale_x_discrete(labels=c("< 1",paste0(seq(1,91,5),"-",seq(5,100,5))), drop=T) +
+#   scale_y_continuous(breaks=seq(-70,70,10),labels=abs(seq(-70,70,10)))+
+#   xlab("Edad (años)") + ylab("Número de víctimas") +
+#   coord_flip()+
+#   #bbc_style()+
+#   theme_classic( )+
+#   #labs(x = "Edad (a?os)", y = "N?mero de v?ctimas", size = 2)+
+#   scale_fill_manual(values = c("red3","dodgerblue4"))+
+#   theme(strip.background = element_blank(),
+#         legend.title = element_blank(),
+#         legend.position = "bottom",
+#         legend.text = element_text(size = 9 ,color='black',
+#                                    angle=0,vjust = 0.5),
+#         #axis.title.y = element_text(color='black', angle=90, vjust = 0.5),
+#         #axis.title.x = element_text(size= 7,color='black', angle=0, vjust = 0.5),
+#         axis.text = element_text(size= 11,color='black', angle=0, vjust = 0.5),
+#         strip.text = element_blank())+
+#   labs(title="Muertes por intervencion policial",
+#        caption = stringr::str_glue("Fuente: Observatorio de prensa OVV  \nn = {nrow(victimasodel)} ({sum(is.na(victimasodel$sexo_victima_2) | is.na(victimasodel$edad__victima_2) |victimasodel$edad__victima_2 == 99 | victimasodel$sexo_victima_2 == 'No informa')} casos perdidos por edad y sexo faltante) en {prensa_victimasodel_sel} medios de prensa consultados \nPer?odo de recolecci?n de informaci?n: {format(startdate, '%d %b')}-{format(enddate, '%d %b %Y')}"))
+#
+# victimasmil_piramide
 
 # victimasmilsexoedad_piramide <- ggplot(data=victimasmilsexoedad_sel,
 #                                        aes(x=cut(edad__victima_1,

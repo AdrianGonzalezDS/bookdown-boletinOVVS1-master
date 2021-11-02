@@ -34,6 +34,14 @@ bookdown::word_document2:
     fig_align: 'center'
 officedown::rdocx_document:
     reference_docx: "custom_reference.docx"
+    tables:
+      style: Table
+      layout: autofit
+      width: 1.2
+      caption:
+       style: Table Caption
+       pre: 'Tabla '
+       sep: ': '
     plots:
       style: Normal
       align: center

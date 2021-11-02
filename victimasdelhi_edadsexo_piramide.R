@@ -15,18 +15,17 @@ enddate <- as.Date(c("2021-06-30"))
 
 #Prepare datos
 victimasdelhi <- victimasdelito %>%
-  select(edad__victima_2, sexo_victima_2,prensa, infodelito2, tipo_delito) %>%
-  filter(infodelito2 == "Si"&
-           tipo_delito == "Homicidio intencional" )
+  select(edad__victima_2, sexo_victima_2,prensa, informacion_sociodem_2, tipo_delito) %>%
+  filter(tipo_delito == "Homicidio intencional" & informacion_sociodem_2 == "Si" |
+           tipo_delito == "Homicidio intencional" & informacion_sociodem_2 == "No")
 
 victimasdelhi
 
 victimasdelhi_sel <- victimasdelito %>%
-  select(edad__victima_2, sexo_victima_2, prensa, infodelito2, tipo_delito) %>%
-  filter(infodelito2 == "Si" &
-           tipo_delito == "Homicidio intencional" &
-           !edad__victima_2 %in% c(99, "No informa", NA, "NA") &
-           !sexo_victima_2 %in% c("No informa", NA, "NA"))
+  select(edad__victima_2, sexo_victima_2, prensa, informacion_sociodem_2, tipo_delito) %>%
+  filter(!edad__victima_2 %in% c(99, "No informa", NA, "NA") &
+           !sexo_victima_2 %in% c("No informa", NA, "NA") & tipo_delito == "Homicidio intencional" & informacion_sociodem_2 == "Si" |
+           tipo_delito == "Homicidio intencional" & informacion_sociodem_2 == "No")
 
 victimasdelhi_sel
 # victimasdelhi_sel$Edad = as.numeric(victimasdelhi_sel$Edad)
@@ -35,7 +34,8 @@ victimasdelhi_sel
 prensa_victimasdelhi_sel <- length(unique(victimasdelhi_sel[["prensa"]]))
 prensa_victimasdelhi_sel
 
-
+v98<-print(length(which(victimasdelhi_sel$edad__victima_2==98)))
+v98
 
 #graficando
 victimasdelhi_piramide <- ggplot(data=victimasdelhi_sel,aes(x=cut(edad__victima_2,
