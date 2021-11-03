@@ -3,6 +3,30 @@
 
 <!---BLOCK_MULTICOL_START--->
 
+
+```{r victimasgenestados, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
+source("sucesosvicviolencia_estados_barras.R", echo = F,local = knitr::knit_global())
+
+```
+
+```{r victimasgenestadosbarras, echo=FALSE, fig.width = 3, fig.asp = 0.7,out.width='90%',warning=FALSE,cache=F,fig.cap = 'Número de víctimas por violencia letal y no letal discriminadas según la entidad federal donde la cobertura mediática registro el suceso.'}
+par(mar = c(4, 4, 0.1, 0.1))
+knitr::include_graphics(c("images/sucesosvicestados_barras.png"))
+# par(mar = c(4, 4, 0.1, 0.1))
+# plot(a)
+# plot(sucesospol_barras)
+```
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html')}
+knitr::kable(
+  tabla_sucesosvicestados, booktabs = T,align = "lcr",
+  caption = "Número de víctimas por violencia letal y no letal discriminada según la entidad federal donde la cobertura mediatica registro el suceso.")
+```
+
+```{r ft.align="center", tab.cap='Número de víctimas por violencia letal y no letal discriminada según la entidad federal donde la cobertura mediática registro el suceso.', tab.id='tab3', label='tab3'}
+tabla_sucesosvicestados
+```
+
 La observación y análisis de los datos obtenidos por el Observatorio de Prensa, de las noticias aparecidas en los medios consultados en el primer semestre del año 2021, permiten presentar las diferentes expresiones de la violencia interpersonal y su caracterización, como parte de los cambios sociales que experimenta la sociedad venezolana, debido a la situación económica, política y a aquellos generados por la pandemia producida por la presencia del covid-19.
 
 Esta caracterización muestra tendencias que hacen pensar en algunos cambios que se han producido en los delitos violentos cometidos durante el primer semestre de año 2021, en comparación con el mismo periodo del año 2020. La cobertura de la prensa en las diferentes sedes del OVV aporta información que da cuenta de la disminución de los homicidios intencionales, y el aumento de otros delitos menos letales como las agresiones y los robos. La violencia delincuencial produce más víctimas que la violencia por intervención policial y siguen siendo los hombres jóvenes los más afectados por esta violencia, en lugares fuera del hogar; aunque no hay que desestimar el aumento del números de mujeres jóvenes, niñas y adolescentes víctimas tanto de feminicidios como de violaciones sexuales y otro tipo de agresiones sexuales, dentro del ámbito del hogar.
