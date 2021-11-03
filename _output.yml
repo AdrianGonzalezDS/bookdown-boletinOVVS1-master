@@ -37,7 +37,7 @@ officedown::rdocx_document:
     tables:
       style: Table
       layout: autofit
-      width: 1.2
+      width: 1
       caption:
        style: Table Caption
        pre: 'Tabla '
