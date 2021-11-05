@@ -43,7 +43,7 @@ victimasdelhi_piramide <- ggplot(data=victimasdelhi_sel,aes(x=cut(edad__victima_
                                             fill=sexo_victima_2)) +
   geom_bar(data=subset(victimasdelhi_sel,sexo_victima_2=="Femenino")) +
   geom_bar(data=subset(victimasdelhi_sel,sexo_victima_2=="Masculino"),aes(y=..count..*(-1))) +
-  scale_x_discrete(labels=c("< 1",paste0(seq(1,91,5),"-",seq(5,100,5))), drop=T) +
+  scale_x_discrete(labels=c(paste0(seq(0,91,5),"-",seq(4,100,5))), drop=T) +
   scale_y_continuous(breaks=seq(-70,70,10),labels=abs(seq(-70,70,10)))+
   xlab("Edad (años)") + ylab("Número de víctimas") +
   coord_flip()+

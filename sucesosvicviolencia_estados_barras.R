@@ -11,6 +11,8 @@ library(ggrepel)#requerido para usar geom_text_repel
 library(janitor)#requerida para usar adorn total
 library(flextable)
 library(gt)
+library(knitr)
+library(readr)
 #library(reshape2)#requerido para el paquete melt
 Sys.setlocale("LC_TIME","Spanish_Spain.1252")
 startdate <- as.Date(c("2021-01-01"))
@@ -112,11 +114,10 @@ tabla_grup_sucesosvicestados <- aggregate_sucesosvicestados %>%
   mutate(perc = `Víctimas` / sum(`Víctimas`)) %>%
   arrange(desc(`Víctimas`)) %>% #solo organiza en orden alfabetico
   mutate(label_pos = cumsum(perc) - perc / 2,
-         Porcentaje = paste0(round(perc * 100,1),"%"))%>%
-  adorn_totals(where = "row", fill = "100%")
+         Porcentaje = paste0(round(perc * 100,1)))%>%
+  adorn_totals(where = "row", fill = "100")
 
 tabla_grup_sucesosvicestados
-
 
 
 
@@ -130,13 +131,19 @@ tabla_grup_sucesosvicestados
 tabla_sucesosvicestados <- tabla_grup_sucesosvicestados
 tabla_sucesosvicestados
 
+
 names(tabla_sucesosvicestados)[names(tabla_sucesosvicestados) ==
                                   "estado"] <- "Estado"
 names(tabla_sucesosvicestados)[names(tabla_sucesosvicestados) ==
                                   "freq"] <- "Víctimas"
 names(tabla_sucesosvicestados)[names(tabla_sucesosvicestados) ==
-                                  "porcentaje"] <- "Porcentaje"
+
+                                                                 "porcentaje"] <- "Porcentaje"
 tabla_sucesosvicestados
+
+
+tabla_sucesosvicestados
+
 
 nvictimas <- tabla_sucesosvicestados[16, 2]
 nvictimas

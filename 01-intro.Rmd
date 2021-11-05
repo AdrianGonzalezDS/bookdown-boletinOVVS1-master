@@ -9,29 +9,21 @@ source("sucesosvicviolencia_estados_barras.R", echo = F,local = knitr::knit_glob
 
 ```
 
-```{r victimasgenestadosbarras, echo=FALSE, fig.width = 3, fig.asp = 0.7,out.width='90%',warning=FALSE,cache=F,fig.cap = 'Número de víctimas por violencia letal y no letal discriminadas según la entidad federal donde la cobertura mediática registro el suceso.'}
-par(mar = c(4, 4, 0.1, 0.1))
-knitr::include_graphics(c("images/sucesosvicestados_barras.png"))
-# par(mar = c(4, 4, 0.1, 0.1))
-# plot(a)
-# plot(sucesospol_barras)
-```
-
-```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html')}
-knitr::kable(
-  tabla_sucesosvicestados, booktabs = T,align = "lcr",
-  caption = "Número de víctimas por violencia letal y no letal discriminada según la entidad federal donde la cobertura mediatica registro el suceso.")
-```
-
-```{r ft.align="center", tab.cap='Número de víctimas por violencia letal y no letal discriminada según la entidad federal donde la cobertura mediática registro el suceso.', tab.id='tab3', label='tab3'}
-tabla_sucesosvicestados
-```
-
 La observación y análisis de los datos obtenidos por el Observatorio de Prensa, de las noticias aparecidas en los medios consultados en el primer semestre del año 2021, permiten presentar las diferentes expresiones de la violencia interpersonal y su caracterización, como parte de los cambios sociales que experimenta la sociedad venezolana, debido a la situación económica, política y a aquellos generados por la pandemia producida por la presencia del covid-19.
 
 Esta caracterización muestra tendencias que hacen pensar en algunos cambios que se han producido en los delitos violentos cometidos durante el primer semestre de año 2021, en comparación con el mismo periodo del año 2020. La cobertura de la prensa en las diferentes sedes del OVV aporta información que da cuenta de la disminución de los homicidios intencionales, y el aumento de otros delitos menos letales como las agresiones y los robos. La violencia delincuencial produce más víctimas que la violencia por intervención policial y siguen siendo los hombres jóvenes los más afectados por esta violencia, en lugares fuera del hogar; aunque no hay que desestimar el aumento del números de mujeres jóvenes, niñas y adolescentes víctimas tanto de feminicidios como de violaciones sexuales y otro tipo de agresiones sexuales, dentro del ámbito del hogar.
 
 Las medidas de confinamiento y desmovilización de la población, han hecho lo propio para propiciar el recrudecimiento de los conflictos familiares, lo que ha afectado las relaciones entre sus miembros, al punto de incitar hechos de violencia que prácticamente mantiene en convivencia al sexo femenino con su principales victimarios que son miembros de la familia, siendo en la mayoría de los casos esposo, ex esposo, padres, abuelos, aumentando los casos reportados de feminicidios, así como violaciones y agresiones sexuales. Aunado a ello existe desconocimiento por un lado, y falta de apoyo por el otro, a las víctimas de estos delitos, que hacen más difícil el control y registro de este tipo de delitos.
+
+```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html')}
+knitr::kable(
+  tabla_sucesosvicestados, booktabs = T,align = "lcr",
+  caption = "Número de víctimas por violencia letal y no letal discriminada según entidad federal donde la cobertura mediatica registró el suceso.")
+```
+
+```{r ft.align = "justify", tab.cap='Número de víctimas por violencia letal y no letal discriminada según entidad federal donde la cobertura mediática registró el suceso.', tab.id='tab3', label='tab3'}
+tabla_sucesosvicestados
+```
 
 Una hipótesis para explicar estas tendencias en el comportamiento de la violencia, que apunta hacia el incremento de casos de violencia que ocurren en ambientes cerrados y privados y disminución de hechos violentos en lugares abiertos y públicos, sin duda tiene que ver, a pesar de los conflictos sociales e inestabilidad política, con factores como la migración de venezolanos a otros países, la destrucción de la economía y del trabajo, las medidas de confinamiento producto de la cuarentena por la pandemia del covid-19, la reducción de delincuentes producto de acciones extrajudiciales por parte de organismos de seguridad, las oportunidades de delitos a pequeñas escalas y más discretas dada la dolarización de actividades económicas, tanto en pequeños comercios como en la economía informal [@LACSO-OVV2020]. A todo ello se suma la violencia estructural producida por la precariedad de los servicios públicos y las acciones de omisión y ausencia de políticas públicas que profundizan la crisis humanitaria y viola los derechos humanos de los ciudadanos.
 

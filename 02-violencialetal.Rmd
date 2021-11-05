@@ -4,29 +4,6 @@
 
 <!---BLOCK_MULTICOL_START--->
 
-```{r victimasdelhiestados, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
-source("victimasdelhi_estados_barras.R", echo = F,local = knitr::knit_global())
-
-```
-
-```{r victimasdelhiestadosbarras, echo=FALSE, fig.width = 3, fig.asp = 0.7,out.width='90%',warning=FALSE,cache=F,fig.cap = 'Número de víctimas por homicidio intencional discriminadas según la entidad federal donde la cobertura mediática registro el suceso.'}
-par(mar = c(4, 4, 0.1, 0.1))
-knitr::include_graphics(c("images/victimasdelhiestados_barras.png"))
-# par(mar = c(4, 4, 0.1, 0.1))
-# plot(a)
-# plot(sucesospol_barras)
-```
-
-```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html')}
-knitr::kable(
-  tabla_victimasdelhiestados,booktabs = T,align = "lcr",
-  caption = "Número de víctimas por homicidio intencional discriminadas según la entidad federal donde la cobertura mediatica registro el suceso.")
-```
-
-```{r ft.align="center", tab.cap='Número de víctimas por homicidio intencional discriminadas según la entidad federal donde la cobertura mediática registro el suceso.', tab.id='tab1', label='tab1'}
-tabla_victimasdelhiestados
-```
-
 Entendiendo el homicidio intencional como la “muerte ilícita causada a una persona con la intención de causarle la muerte u ocasionarle lesiones graves” [@UNODC2015,19], no cabe duda de que este delito sigue siendo de los más graves que se cometen y son reportados por la prensa consultada. Para este primer semestre del año 2021 la prensa nacional y regional consultada, registró un total de 652 muertes por homicidio intencional, de los cuales sólo se tuvo información sobre edad y sexo en 468 casos. 
 
 ```{r victimasmilpiramide, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
@@ -73,24 +50,6 @@ knitr::include_graphics(c("images/victimasdelhimotiv_graf.png"))
 ```{r victimasmilestados, results='hide',echo=FALSE,message=FALSE, warning=FALSE,cache=F}
 source("victimasmil_estados_barras.R", echo = F,local = knitr::knit_global())
 
-```
-
-```{r victimasmilestadosbarras, echo=FALSE, fig.width = 3, fig.asp = 0.7,out.width='90%',warning=FALSE,cache=F,fig.cap = 'Número de víctimas por intervención policial discriminadas según la entidad federal donde la cobertura mediática registro el suceso.'}
-par(mar = c(4, 4, 0.1, 0.1))
-knitr::include_graphics(c("images/victimasmilestados_barras.png"))
-# par(mar = c(4, 4, 0.1, 0.1))
-# plot(a)
-# plot(sucesospol_barras)
-```
-
-```{r fig.align='center', echo=FALSE, include=identical(knitr:::pandoc_to(), 'html')}
-knitr::kable(
-  tabla_victimasmilestados,booktabs = T,align = "lcr",
-  caption = "Número de víctimas por intervención policial discriminadas según la entidad federal donde la cobertura mediatica registro el suceso.")
-```
-
-```{r ft.align="center", tab.cap='Número de víctimas por intervención policial discriminadas según la entidad federal donde la cobertura mediática registro el suceso.', tab.id='tab2', label='tab2'}
-tabla_victimasmilestados
 ```
 
 Las muertes por intervención policial informadas durante el primer semestre  del 2021, en los reportes de prensa consultados, alcanzan un total de 562 víctimas (gráfico \@ref(fig:victimasmilsexoedadpir)). Sin embargo, de ese total la prensa solo mencionó en 207 casos información de edad y sexo de las víctimas, entre las cuales 60 son de sexo masculino, en edades comprendidas entre 20 y 30 años, aunque llama la atención que también se reportaron víctimas de menos de un año y de 70 años, que, aunque en mucha menor proporción, intriga la muerte de varones de esas edades en manos de la policía. La muerte de mujeres por funcionarios policiales es mucho menor que los hombres, siendo las víctimas mayores de 20 años las más afectadas. 
